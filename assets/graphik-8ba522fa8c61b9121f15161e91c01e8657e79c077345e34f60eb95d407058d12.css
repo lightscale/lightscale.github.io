@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'Graphik Web';
+  src: url(/assets/Graphik-SuperItalic-Web-d0b8769cb5182aa1cb9d91ef0fc4f752ad822fa5ce169906efb045d8fcfebdc5.eot);
+  src: url(/assets/Graphik-SuperItalic-Web-d0b8769cb5182aa1cb9d91ef0fc4f752ad822fa5ce169906efb045d8fcfebdc5.eot?#iefix) format("embedded-opentype"), url(/assets/Graphik-SuperItalic-Web-fec825fe80981df223d92af198c705f9aaf98e20ffd808c095a8261d27e0a1d6.woff) format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url(/assets/Graphik-Super-Web-86be02e976390033ae9af8adb9e1a1800445b49d72208a005e70742bff9645dc.eot);
+  src: url(/assets/Graphik-Super-Web-86be02e976390033ae9af8adb9e1a1800445b49d72208a005e70742bff9645dc.eot?#iefix) format("embedded-opentype"), url(/assets/Graphik-Super-Web-6406204e0a31971259bc7706b5d07432caf810198c2f9cbd9468e80bb494b967.woff) format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url(/assets/Graphik-BlackItalic-Web-c1922052d3db7e3005d4243a3b424ac3b812b979b18aab9d359e7d3292bdffb6.eot);
+  src: url(/assets/Graphik-BlackItalic-Web-c1922052d3db7e3005d4243a3b424ac3b812b979b18aab9d359e7d3292bdffb6.eot?#iefix) format("embedded-opentype"), url(/assets/Graphik-BlackItalic-Web-f3af45d568b1d5b760ff488756e6a17f134e94f62f2920f9e817cc1eac75f74a.woff) format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url(/assets/Graphik-Black-Web-f66ea7362a197c5ea83a29d79faf5ec8933f0a01560e73132572aeaca91e735c.eot);
+  src: url(/assets/Graphik-Black-Web-f66ea7362a197c5ea83a29d79faf5ec8933f0a01560e73132572aeaca91e735c.eot?#iefix) format("embedded-opentype"), url(/assets/Graphik-Black-Web-2901209536fcfb6f8fe4def2253b379c2803ad5752221763a4bb9cf776925992.woff) format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url(/assets/Graphik-BoldItalic-Web-09ce407e041813af7b75137184c22889a0211ca96bf4eee0ddae66500b2b53c9.eot);
+  src: url(/assets/Graphik-BoldItalic-Web-09ce407e041813af7b75137184c22889a0211ca96bf4eee0ddae66500b2b53c9.eot?#iefix) format("embedded-opentype"), url(/assets/Graphik-BoldItalic-Web-bc578a444ed02fdc6bd5935b91fd71ac55fdb746d362d89256b80e7cbaad8fe1.woff) format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url(/assets/Graphik-Bold-Web-6b7b6c6735d3e2c37a1bc004c0f0b46536d24714d841cfff617c4e3727372a86.eot);
+  src: url(/assets/Graphik-Bold-Web-6b7b6c6735d3e2c37a1bc004c0f0b46536d24714d841cfff617c4e3727372a86.eot?#iefix) format("embedded-opentype"), url(/assets/Graphik-Bold-Web-3467eac0af98292e2d1ac7dd02a613a7a7d775bd12c0870b99030b585e69d46d.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url(/assets/Graphik-SemiboldItalic-Web-7b164835e43e775705e4384dc51ada3a427198eeaa6464b3c0de6c5a478d9440.eot);
+  src: url(/assets/Graphik-SemiboldItalic-Web-7b164835e43e775705e4384dc51ada3a427198eeaa6464b3c0de6c5a478d9440.eot?#iefix) format("embedded-opentype"), url(/assets/Graphik-SemiboldItalic-Web-13ef12d2a99714f602c4f59a914f1a6e0dd702b0d756ae6393cb7e5b7ed1e252.woff) format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url(/assets/Graphik-Semibold-Web-dd5ab56dbf81a328e4c4ae7c03c8171dcaa8ae16958f259a1a6e9fc199e2f7a5.eot);
+  src: url(/assets/Graphik-Semibold-Web-dd5ab56dbf81a328e4c4ae7c03c8171dcaa8ae16958f259a1a6e9fc199e2f7a5.eot?#iefix) format("embedded-opentype"), url(/assets/Graphik-Semibold-Web-43266a917ecb8ea70cc042c56d095a68a193898c2653d7c18ad111d4ad395c4d.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url(/assets/Graphik-MediumItalic-Web-ab911aaaf7c39cc3943472e60ff746596a397611232184cf635168c115cb4075.eot);
+  src: url(/assets/Graphik-MediumItalic-Web-ab911aaaf7c39cc3943472e60ff746596a397611232184cf635168c115cb4075.eot?#iefix) format("embedded-opentype"), url(/assets/Graphik-MediumItalic-Web-c41f4bf18e405c4a51c71c0f229ddc24148556a3d52feda75734d8db525edeb9.woff) format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url(/assets/Graphik-Medium-Web-2592b187677ce4255b9b27bdbcca1e5d7c499329af6cdcdd5678e706fc5bf9ba.eot);
+  src: url(/assets/Graphik-Medium-Web-2592b187677ce4255b9b27bdbcca1e5d7c499329af6cdcdd5678e706fc5bf9ba.eot?#iefix) format("embedded-opentype"), url(/assets/Graphik-Medium-Web-8f80c6ab90afcf7ed5d06b7bfbaca2fbc5a1503fc6c4c914f6973c316b57822f.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url(/assets/Graphik-RegularItalic-Web-052db9b0c5caad833cb42c4c5a1c253fbef582a861ffa88bc7ba41aaba06ab00.eot);
+  src: url(/assets/Graphik-RegularItalic-Web-052db9b0c5caad833cb42c4c5a1c253fbef582a861ffa88bc7ba41aaba06ab00.eot?#iefix) format("embedded-opentype"), url(/assets/Graphik-RegularItalic-Web-9e647b7b135e54a874c9a2f9218e4e409f223f3df23f1ceb9789de92421eb54c.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url(/assets/Graphik-Regular-Web-b803f7bdd9f146b259fb5d82bc5eaf58c1e781577f1cc94ae7b4bbbfabca866a.eot);
+  src: url(/assets/Graphik-Regular-Web-b803f7bdd9f146b259fb5d82bc5eaf58c1e781577f1cc94ae7b4bbbfabca866a.eot?#iefix) format("embedded-opentype"), url(/assets/Graphik-Regular-Web-321faf4983b0c2f89b67bea868e3f5339d6a6982c8258f8901e78b0db82a71d4.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url(/assets/Graphik-LightItalic-Web-446ee1103a90f8a9bb40c3c26f3ed6b505e0890346c3adeea336171e879dd20b.eot);
+  src: url(/assets/Graphik-LightItalic-Web-446ee1103a90f8a9bb40c3c26f3ed6b505e0890346c3adeea336171e879dd20b.eot?#iefix) format("embedded-opentype"), url(/assets/Graphik-LightItalic-Web-696965ec12793c2d822010c1115b0068958a16b72c2b55f61b142b18fd80ba65.woff) format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url(/assets/Graphik-Light-Web-79d73099231f7529234f93820a7a1abd296863fd3291eeabe7b9b99d1c160b69.eot);
+  src: url(/assets/Graphik-Light-Web-79d73099231f7529234f93820a7a1abd296863fd3291eeabe7b9b99d1c160b69.eot?#iefix) format("embedded-opentype"), url(/assets/Graphik-Light-Web-d7f287a58be6c5f5b4a424fcab4893b9917a1516d944a62e667359c4bfc4f769.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url(/assets/Graphik-ExtralightItalic-Web-4dde263fe16b1d3da202607249cb4726b849b51c0f7a7821e50a4ceebf5a82bc.eot);
+  src: url(/assets/Graphik-ExtralightItalic-Web-4dde263fe16b1d3da202607249cb4726b849b51c0f7a7821e50a4ceebf5a82bc.eot?#iefix) format("embedded-opentype"), url(/assets/Graphik-ExtralightItalic-Web-1841f688f3ac3716392018768fcb5a29bf8acc66e62abd3d8086a3abaab9ba23.woff) format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url(/assets/Graphik-Extralight-Web-c3a9c34305a27c5ad7b679d7d82bd9d9ebed8f7f846d3b424c76212bdde30fb5.eot);
+  src: url(/assets/Graphik-Extralight-Web-c3a9c34305a27c5ad7b679d7d82bd9d9ebed8f7f846d3b424c76212bdde30fb5.eot?#iefix) format("embedded-opentype"), url(/assets/Graphik-Extralight-Web-9eed40367a30614b75e4d7acfbe53644f20d5bf9e5d3d47ee7c5214998f2c8a2.woff) format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url(/assets/Graphik-ThinItalic-Web-fd28c77620932290e0e97ae76c65ebdbb8c48182d881c6ad16c55b700616f3c4.eot);
+  src: url(/assets/Graphik-ThinItalic-Web-fd28c77620932290e0e97ae76c65ebdbb8c48182d881c6ad16c55b700616f3c4.eot?#iefix) format("embedded-opentype"), url(/assets/Graphik-ThinItalic-Web-2b2f2f7e4c1603b7483a9cc16f74c648db9b10da743257bbaffdfcc94ef25916.woff) format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url(/assets/Graphik-Thin-Web-54bd8d7ad959399475c96c32be254b02fcb0bb5c26790ada74d70964ed40be01.eot);
+  src: url(/assets/Graphik-Thin-Web-54bd8d7ad959399475c96c32be254b02fcb0bb5c26790ada74d70964ed40be01.eot?#iefix) format("embedded-opentype"), url(/assets/Graphik-Thin-Web-c7897b225af09634bf4aa29dd0359cabe0e598d0be9af255cdd5e9880f50bfc0.woff) format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+}

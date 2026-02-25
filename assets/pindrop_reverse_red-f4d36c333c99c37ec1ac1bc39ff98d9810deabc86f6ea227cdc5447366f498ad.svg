@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Pin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="✅-Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Lightscale-Home" transform="translate(-287.000000, -6547.000000)">
+            <g id="Pin" transform="translate(287.000000, 6547.000000)">
+                <circle id="Oval-2" fill="#FFFFFF" cx="28" cy="28" r="28"></circle>
+                <path d="M27.6594395,20.3010799 C26.0141673,22.461794 22.6143217,27.3147716 22.3174824,30.867639 C22.2001273,32.2609429 22.7075154,33.6818598 23.7073347,34.7702706 C24.7336163,35.8851438 26.1729418,36.524844 27.6594395,36.524844 C29.1459371,36.524844 30.5864131,35.8851438 31.6115443,34.7702706 C32.612514,33.6818598 33.1187516,32.2597924 33.0025471,30.867639 C32.7045572,27.3147716 29.3047116,22.461794 27.6594395,20.3010799" id="Drop" fill="#FF3A4F" transform="translate(27.659880, 28.412962) scale(1, -1) translate(-27.659880, -28.412962) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

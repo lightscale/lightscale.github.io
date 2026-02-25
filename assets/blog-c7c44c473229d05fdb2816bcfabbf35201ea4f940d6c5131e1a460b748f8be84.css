@@ -1,0 +1,11 @@
+/* line 12, app/assets/stylesheets/blog.sass */
+.blog {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  font-family: "Graphik Web", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>V</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Sample-Request" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-211.000000, -166.000000)" id="V" fill="#667084">
+            <path d="M217.292835,168.274311 L214,171.35464 L210.707165,168.274311 C210.316184,167.908563 209.684216,167.908563 209.293235,168.274311 C208.902255,168.640059 208.902255,169.231243 209.293235,169.596991 L214,174 L218.706765,169.596991 C219.097745,169.231243 219.097745,168.640059 218.706765,168.274311 C218.315784,167.908563 217.683816,167.908563 217.292835,168.274311" transform="translate(214.000000, 171.000000) rotate(-90.000000) translate(-214.000000, -171.000000) "></path>
+        </g>
+    </g>
+</svg>

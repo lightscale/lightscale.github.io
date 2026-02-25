@@ -1,0 +1,1990 @@
+$lightscale_dark_blue: #021E5C
+$lightscale_red: #FF5253
+$lightscale_yellow: #FDCC1C
+$lightscale_green: #1DC77D
+$lightscale_cyan: #6BD5C8
+$lightscale_true_blue: #1E4AFF
+$lightscale_violet: #4204BE
+$lightscale_black: #001032
+$lightscale_pink: #FFC6D5
+$lightscale_white: #F7FCFA
+
+.home
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  -webkit-text-size-adjust: none
+  -moz-text-size-adjust: none
+  -ms-text-size-adjust: none
+
+  background-color: $lightscale_dark_blue
+  font-family: "Graphik Web", sans-serif
+  font-size: 14px
+  line-height: 26px
+
+  div, input
+    box-sizing: border-box
+
+  a
+    text-decoration: none
+
+  // global
+
+  .way_left
+    position: absolute
+    left: -5000px
+
+  .flex_row
+    display: -webkit-box
+    display: -moz-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+
+  .flex_col
+    display: -webkit-box
+    display: -moz-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    flex-direction: column
+    flex-wrap: nowrap
+
+  .nl
+    display: inline
+
+  .auto
+    height: auto
+
+  .anchor_interpreting_potency_1
+    display: block
+    position: relative
+    visibility: hidden
+    top: -100px
+
+  .anchor_interpreting_potency_2
+    display: block
+    position: relative
+    visibility: hidden
+    top: -100px
+
+  .anchor_interpreting_potency_3
+    display: block
+    position: relative
+    visibility: hidden
+    top: -100px
+
+  .anchor_services
+    display: block
+    position: relative
+    visibility: hidden
+    top: -200px
+
+  .anchor_technology
+    display: block
+    position: relative
+    visibility: hidden
+    top: -226px
+
+  .anchor_contact
+    display: block
+    position: relative
+    visibility: hidden
+    top: -226px
+
+  // navbar
+
+  #big_menu, #big_menu_pricing
+    width: 100%
+    height: 100%
+    font-size: 40px
+    line-height: 200%
+    position: fixed
+    z-index: 1002
+    -webkit-transition: margin-left 0.3s
+    transition: margin-left 0.3s
+    transition-timing-function: ease
+    transition-property: transform
+    padding: 24px
+    a
+      font-weight: 500
+    ul
+      margin: 40px 0px 0px 0px
+    .social_media_bar
+      @extend .flex_row
+      width: 100%
+      //max-width: 272px
+      margin: 10px 0px 0px 0px
+      .icon_column
+        @extend .flex_row
+        justify-content: center
+        width: 50%
+        margin: 0px 30px 0px 30px
+      //.icon_first
+      //  margin: 0px 25px 0px 0px
+      //.icon
+      //  margin: 0px 25px 0px 25px
+  #big_menu
+    background: $lightscale_black
+    a
+      color: #FFFFFF
+    .menu_get_started
+      color: $lightscale_pink
+  #big_menu_pricing
+    background: #FFFFFF
+    a
+      color: #021E5C
+    .menu_pricing_get_started
+      color: #AF2796
+  .big_menu_hidden
+    transform: translateX(100%)
+  .nav_menu
+    margin: 0px 0px 0px 20px
+    cursor: pointer
+    outline: none
+    position: fixed
+    top: 46px
+    right: 60px
+    z-index: 1003
+    transition: 250ms
+  #menu_button
+    width: 26px
+    height: 20px
+    position: relative
+    -webkit-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
+    transform: rotate(0deg)
+    -webkit-transition: .5s ease-in-out
+    -moz-transition: .5s ease-in-out
+    -o-transition: .5s ease-in-out
+    transition: .5s ease-in-out
+    cursor: pointer
+  #menu_button
+    span
+      display: block
+      position: absolute
+      height: 4px
+      width: 100%
+      background: #FFFFFF
+      border-radius: 9px
+      opacity: 1
+      left: 0
+      -webkit-transform: rotate(0deg)
+      -moz-transform: rotate(0deg)
+      -o-transform: rotate(0deg)
+      transform: rotate(0deg)
+      -webkit-transition: .25s ease-in-out
+      -moz-transition: .25s ease-in-out
+      -o-transition: .25s ease-in-out
+      transition: .25s ease-in-out
+    span.pricing_color
+      background: $lightscale_dark_blue
+  #menu_button span:nth-child(1)
+    top: 0px
+  #menu_button span:nth-child(2), #menu_button span:nth-child(3)
+    top: 8px
+  #menu_button span:nth-child(4)
+    top: 16px
+  #menu_button.open span:nth-child(1)
+    top: 3px
+    width: 0%
+    left: 50%
+  #menu_button.open span:nth-child(2)
+    -webkit-transform: rotate(45deg)
+    -moz-transform: rotate(45deg)
+    -o-transform: rotate(45deg)
+    transform: rotate(45deg)
+  #menu_button.open span:nth-child(3)
+    -webkit-transform: rotate(-45deg)
+    -moz-transform: rotate(-45deg)
+    -o-transform: rotate(-45deg)
+    transform: rotate(-45deg)
+  #menu_button.open span:nth-child(4)
+    top: 8px
+    width: 0%
+    left: 50%
+  .navbar_container
+    background-color: $lightscale_dark_blue
+    width: 100%
+    position: fixed
+    z-index: 1001
+    .navbar
+      @extend .flex_row
+      width: 100%
+      max-width: 1280px
+      height: 100px
+      background-color: $lightscale_dark_blue
+      padding: 32px 100px 20px 100px
+      font-weight: 500
+      margin: auto
+      transition: height 250ms ease-in-out, padding 250ms ease-in-out
+      a
+        color: #FFFFFF
+      a:hover
+        color: #BFC3CB
+      .logo_space
+        flex-grow: 1
+        .logo
+          width: 160px
+          height: 48px
+      .nav_links
+        @extend .flex_row
+        .nav_link
+          text-align: center
+          white-space: nowrap
+          padding: 13px 20px 12px 20px
+          a
+            -webkit-transition: color 0.25s ease
+            transition: color 0.25s ease
+        .nav_link_active
+          a
+            -webkit-transition: color 0.25s ease
+            transition: color 0.25s ease
+            color: $lightscale_pink
+        .nav_button
+          padding: 6px 0px 8px 0px
+          margin: 0px 0px 0px 20px
+          .contact_button
+            display: inline-block
+            height: 34px
+            color: $lightscale_dark_blue
+            background-color: #FFFFFF
+            text-decoration: none
+            font-size: 13px
+            font-weight: 600
+            line-height: 19px
+            border-radius: 4px
+            text-align: center
+            cursor: pointer
+            box-sizing: border-box
+            white-space: nowrap
+            padding: 8px 16px 9px 16px
+          .contact_button:hover
+            background-image: -webkit-linear-gradient(270deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1))
+            background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1))
+          .contact_button:active
+            background-image: -webkit-linear-gradient(270deg, rgba(0, 16, 50, .12), rgba(0, 16, 50, .12))
+            background-image: linear-gradient(180deg, rgba(0, 16, 50, .12), rgba(0, 16, 50, .12))
+          .contact_button_pricing
+            color: #FFFFFF
+            background-color: $lightscale_dark_blue
+    .navbar_pricing
+      background-color: #FFFFFF
+      a
+        color: $lightscale_dark_blue
+      a:hover
+        color: #BFC3CB
+    .navbar_collapsed
+      height: 88px
+      padding-top: 20px
+  .navbar_container_pricing
+    background-color: #FFFFFF
+
+  // blog box
+
+  .box_blog_container
+    width: 100%
+    background-color: #FFFFFF
+    .box_blog
+      @extend .flex_col
+      width: 100%
+      max-width: 960px
+      margin: auto
+      padding: 117px 100px 100px 100px
+      .blog_post
+        width: 100%
+        background-color: #FFFFFF
+        color: #001032
+        font-size: 16px
+        line-height: 28px
+        padding: 30px 0px 60px 0px
+        a
+          color: $lightscale_true_blue
+          text-decoration: underline
+        p
+          margin: 1em 0em 1em 0em
+        h1
+          color: $lightscale_dark_blue
+          font-size: 48px
+          line-height: 54px
+          letter-spacing: -1.5px
+          font-weight: 700
+          margin: 10px 0px 10px 0px
+        h2
+          color: #667084
+          font-size: 20px
+          line-height: 30px
+          font-weight: 400
+          margin: 10px 0px 10px 0px
+        h3
+          color: #001032
+          font-size: 28px
+          line-height: 31px
+          font-weight: 600
+          margin: 32px 0px 20px 0px
+        h4
+          color: #001032
+          font-size: 20px
+          line-height: 22px
+          font-weight: 600
+          margin: 32px 0px 20px 0px
+        h5
+          font-family: Roboto Mono
+          font-style: normal
+          font-weight: normal
+          color: #AF2796
+          font-size: 14px
+        b
+          color: #001032
+          font-size: 16px
+          font-weight: 600
+          line-height: 28px
+          margin: 0px
+        .blog_post_headers
+          max-width: 600px
+          padding: 0px 0px 10px 0px
+        .blog_post_author
+          @extend .flex_row
+          width: 100%
+          height: 28px
+          padding: 0px 0px 0px 0px
+          h5
+            color: #AF2796
+            font-size: 14px
+          .blog_post_author_portrait_container
+            width: 28px
+            height: 28px
+            margin: 0px 12px 0px 0px
+            .blog_post_author_portrait
+              width: 100%
+              height: 100%
+              border-radius: 25px
+          .blog_post_author_name
+        .blog_post_image_container
+          @extend .flex_col
+          justify-content: center
+          align-items: center
+          padding: 43px 0px 40px 0px
+          h5
+            color: #667084
+            font-size: 12px
+            line-height: 18px
+            margin: 12px 0px 0px 0px
+          .blog_post_image
+            max-width: 100%
+          .blog_post_image_caption
+            width: 100%
+        .blog_post_image_container_float
+          @extend .flex_col
+          max-width: 50%
+          float: right
+          justify-content: center
+          align-items: center
+          margin: 0px 0px 12px 40px
+          h5
+            color: #667084
+            font-size: 12px
+            line-height: 18px
+            margin: 12px 0px 0px 0px
+          .blog_post_image
+            max-width: 100%
+            border-radius: 3px
+          .blog_post_image_caption
+            width: 100%
+    .box_collapsed_blog
+      @extend .flex_col
+      width: 100%
+      max-width: 1080px
+      margin: auto
+      padding: 147px 0px 100px 0px
+      .collapsed_blog_post
+        @extend .flex_row
+        align-items: center
+        width: 100%
+        height: 400px
+        margin: 0px 0px 60px 0px
+        h1
+          color: $lightscale_dark_blue
+          font-size: 32px
+          line-height: 35px
+          letter-spacing: -1px
+          font-weight: 700
+          margin: 0px 0px 20px 0px
+        h2
+          color: #667084
+          font-size: 16px
+          line-height: 26px
+          font-weight: 400
+          margin: 0px 0px 24px 0px
+        h3
+          color: #AF2796
+          font-family: Roboto Mono
+          font-style: normal
+          font-weight: normal
+        .collapsed_blog_post_image_container
+          display: -webkit-box
+          display: -moz-box
+          display: -ms-flexbox
+          display: -webkit-flex
+          display: flex
+          align-items: center
+          width: 50%
+          height: 100%
+          .collapsed_blog_post_image
+            max-width: 100%
+        .collapsed_blog_post_header_container
+          display: -webkit-box
+          display: -moz-box
+          display: -ms-flexbox
+          display: -webkit-flex
+          display: flex
+          align-items: center
+          width: 50%
+          height: 100%
+          padding: 0px 0px 0px 45px
+          .collapsed_blog_post_headers
+            max-width: 416px
+
+  // introduction box
+
+  .box_introduction_container
+    width: 100%
+    background-color: $lightscale_dark_blue
+    .box_introduction
+      @extend .flex_col
+      width: 100%
+      max-width: 1280px
+      height: 805px
+      overflow: hidden
+      background-color: $lightscale_dark_blue
+      color: #FFFFFF
+      margin: auto
+      padding: 200px 0px 0px 0px
+      h1, h2
+        font-size: 72px
+        line-height: 72px
+        font-weight: 700
+        letter-spacing: -2.7px
+        margin: 0px
+      h1
+        color: #FFC6D5
+      h2
+        color: #FFFFFF
+      h3, h4
+        font-family: 'Roboto Mono', monospace
+        font-size: 14px
+        line-height: 20px
+        font-weight: 400
+        margin: 0px
+      h3
+        color: #FFC6D5
+      h4
+        color: #FFFFFF
+      .splash_container
+        @extend .flex_row
+        width: 100%
+        padding: 0px 0px 0px 100px
+        .headers_container
+          @extend .flex_col
+          flex-wrap: nowrap
+          width: 380px
+          min-width: 380px
+          margin: 0px 40px 0px 0px
+          .large_headers
+            width: 100%
+            margin: 40px 0px 60px 0px
+          .small_headers
+            width: 100%
+        .header_image_container
+          min-width: 605px
+          max-width: 760px
+          .collage
+            width: 100%
+
+  // testimonials box
+
+  .box_testimonials_container
+    width: 100%
+    background-color: $lightscale_white
+    position: relative
+    overflow: hidden
+    .box_testimonials
+      width: 100%
+      @extend .flex_col
+      q
+        color: #021E5C
+        font-size: 24px
+        line-height: 35px
+        quotes: "“" "”" "‘" "’"
+      q::before
+        content: open-quote
+        font-size: 40px
+        line-height: 25px
+      q::after
+        content: close-quote
+        font-size: 40px
+        line-height: 25px
+      h2
+        color: $lightscale_green
+        font-size: 14px
+        font-weight: 600
+      h3, a
+        font-family: 'Roboto Mono', monospace
+        color: $lightscale_green
+        font-size: 14px
+      a
+        text-decoration: underline
+      ul.carousel
+        @extend .flex_row
+        width: 400%
+        transform: translate(0%)
+        animation-name: slideshow
+        animation-duration: 40s
+        animation-timing-function: cubic-bezier(.34,.47,.63,.46)
+        animation-iteration-count: infinite
+        animation-delay: 10s
+        li.slide
+          width: 100%
+          display: block
+          text-align: center
+          .slide_contents
+            @extend .flex_col
+            justify-content: center
+            height: 500px
+            max-width: 1280px
+            padding: 0px 20px 0px 20px
+            margin: 0 auto
+            .slide_testimonial
+              padding: 0px 0px 15px 0px
+      .dots
+        display: -webkit-box
+        display: -moz-box
+        display: -ms-flexbox
+        display: -webkit-flex
+        display: flex
+        justify-content: center
+        width: 100%
+        padding: 0px 0px 50px 0px
+        .dot
+          background-color: #D9DFE2
+          border-radius: 50%
+          width: 9px
+          height: 9px
+          margin: 0px 5px 0px 5px
+        .dot_one
+          background-color: $lightscale_green
+          animation-name: dot_1
+          animation-duration: 40s
+          animation-iteration-count: infinite
+          animation-delay: 10s
+        .dot_two
+          animation-name: dot_2
+          animation-duration: 40s
+          animation-iteration-count: infinite
+          animation-delay: 10s
+        .dot_three
+          animation-name: dot_3
+          animation-duration: 40s
+          animation-iteration-count: infinite
+          animation-delay: 10s
+      @keyframes slideshow
+        0%
+          transform: translate(-0%)
+          // opacity: 1
+        // 3%
+        //   opacity: 0.2
+        10%
+          transform: translate(-25%)
+          // opacity: 1
+          .slide
+            background-color: yellow
+        40%
+          transform: translate(-25%)
+          // opacity: 1
+        // 43%
+        //   opacity: 0.2
+        50%
+          transform: translate(-50%)
+          // opacity: 1
+        70%
+          transform: translate(-50%)
+          // opacity: 1
+        // 73%
+        //   opacity: 0.2
+        80%
+          transform: translate(-75%)
+          // opacity: 1
+        100%
+          transform: translate(-75%)
+          // opacity: 1
+      @keyframes dot_1
+        0%
+          background-color: $lightscale_green
+        9%
+          background-color: $lightscale_green
+        10%
+          background-color: #D9DFE2
+        80%
+          background-color: #D9DFE2
+        81%
+          background-color: $lightscale_green
+        100%
+          background-color: $lightscale_green
+      @keyframes dot_2
+        0%
+          background-color: #D9DFE2
+        9%
+          background-color: #D9DFE2
+        10%
+          background-color: $lightscale_green
+        49%
+          background-color: $lightscale_green
+        50%
+          background-color: #D9DFE2
+        100%
+          background-color: #D9DFE2
+      @keyframes dot_3
+        0%
+          background-color: #D9DFE2
+        49%
+          background-color: #D9DFE2
+        50%
+          background-color: $lightscale_green
+        80%
+          background-color: $lightscale_green
+        81%
+          background-color: #D9DFE2
+        100%
+          background-color: #D9DFE2
+
+  // services box
+
+  .box_services_container
+    width: 100%
+    background-color: #FFFFFF
+    .box_services
+      @extend .flex_col
+      width: 100%
+      max-width: 1280px
+      background-color: #FFFFFF
+      padding: 120px 100px 100px 100px
+      margin: auto
+      h1
+        color: #00B667
+        font-size: 22px
+        font-weight: 500
+        margin: 0px
+      h2
+        font-family: 'Roboto Mono', monospace
+        color: #00B667
+        margin: 60px 0px 0px 0px
+      h3
+        color: $lightscale_dark_blue
+        font-size: 48px
+        line-height: 50px
+        font-weight: 700
+        letter-spacing: -1.5px
+        margin: 0px
+      p
+        color: $lightscale_dark_blue
+        font-size: 32px
+        line-height: 48px
+      .box_services_summary
+        margin: 0px 0px 120px 0px
+        .box_services_text
+          max-width: 864px
+      .services_showcase
+        @extend .flex_col
+        width: 100%
+        p
+          font-size: 16px
+          line-height: 24px
+          color: #667084
+        .services
+          @extend .flex_row
+          margin: 0px 0px 140px 0px
+          .services_image
+            width: 50%
+            background-image: asset-url("services_compliance.png")
+            background-repeat: no-repeat
+            background-position: center
+            background-color: $lightscale_dark_blue
+            background-size: 80%
+            border-radius: 8px
+            margin: 0px 40px 0px 0px
+          .custom_services_background
+            background-image: asset-url("services_custom.png")
+            background-color: #FFC6D5
+          .services_section
+            width: 50%
+            padding: 0px 0px 40px 0px
+            margin: 0px 0px 0px 40px
+            .line_container
+              display: block
+              background-color: #00B667
+              width: 100px
+              height: 3px
+              margin: 0px 0px 48px 0px
+            .services_header
+              max-width: 360px
+              margin: 0px 0px 24px 0px
+            .services_description
+              max-width: 400px
+              margin: 0px 0px 24px 0px
+            .test_list
+              @extend .flex_col
+              margin: 32px 0px 24px 0px
+              .test
+                @extend .flex_row
+                width: 100%
+                padding: 7px 0px 7px 0px
+                border: solid 1px #E5E6EA
+                border-left: none
+                border-right: none
+                border-bottom: none
+                .test_label
+                  flex-grow: 1
+                  h1
+                    font-family: 'Roboto Mono', monospace
+                    color: $lightscale_dark_blue
+                    font-size: 14px
+                    line-height: 20px
+                    margin: 5px 0px 0px 10px
+                .check_icon
+                  min-width: 22px
+                  min-height: inherit
+                  .check
+                    width: 100%
+                    height: 100%
+            .button
+              display: inline-block
+              height: 34px
+              color: #FFFFFF
+              background-color: #00B667
+              text-decoration: none
+              font-size: 13px
+              font-weight: 600
+              line-height: 19px
+              border-radius: 4px
+              text-align: center
+              cursor: pointer
+              box-sizing: border-box
+              white-space: nowrap
+              padding: 8px 16px 9px 16px
+            .button:hover
+              background-image: -webkit-linear-gradient(270deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1))
+              background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1))
+            .button:active
+              background-image: -webkit-linear-gradient(270deg, rgba(0, 16, 50, .12), rgba(0, 16, 50, .12))
+              background-image: linear-gradient(180deg, rgba(0, 16, 50, .12), rgba(0, 16, 50, .12))
+            .purple
+              background-color: #AF2796
+        .bottom
+          margin: 0px
+
+  // technology box
+
+  .box_technology_container
+    width: 100%
+    background-color: $lightscale_black
+    .box_technology
+      @extend .flex_col
+      width: 100%
+      max-width: 1280px
+      background-color: $lightscale_black
+      padding: 120px 100px 100px 100px
+      margin: auto
+      .box_technology_summary
+        margin: 0px 0px 60px 0px
+        p
+          color: #FFFFFF
+          font-size: 32px
+          line-height: 48px
+        .box_technology_header_container
+          @extend .flex_row
+          width: 100%
+          height: 26px
+          margin: 0px 0px 40px 0px
+          h1
+            font-size: 22px
+            font-weight: 500
+            color: #FFC6D5
+          .box_technology_icon
+            .full
+              width: 20px
+              height: 20px
+              margin: 3px 0px 3px 0px
+          .box_technology_header
+            margin: 0px 0px 0px 12px
+        .box_technology_summary_text
+          max-width: 864px
+      .ovals
+        @extend .flex_row
+        width: 100%
+        margin: 0px 0px 140px 0px
+        .oval_column
+          @extend .flex_col
+          flex-grow: 1
+          min-width: 176px
+          max-width: 320px
+          margin: 0px 60px 0px 0px
+          .oval_section
+            width: 100%
+            min-height: 176px
+            max-height: 320px
+            margin: 0px 0px 40px 0px
+            .oval
+              width: 100%
+              height: 100%
+              border-radius: 600px
+          .oval_header
+            width: 100%
+            height: 48px
+            padding: 12px 0px 12px 0px
+            border-top: solid 1px #667084
+            h1
+              color: #FFC6D5
+              font-size: 18px
+              font-weight: 500
+              line-height: 24px
+          .oval_summary
+            width: 100%
+            p
+              color: #FFFFFF
+              font-family: 'Roboto Mono', monospace
+              font-size: 14px
+              line-height: 20px
+        .marginless
+          margin: 0px
+      .technology_showcase
+        @extend .flex_col
+        width: 100%
+        h1
+          color: #FFFFFF
+          font-size: 48px
+          line-height: 50px
+          font-weight: 700
+          letter-spacing: -1.5px
+        p
+          color: #FFFFFF
+          font-size: 16px
+          line-height: 24px
+        a
+          color: #AF2796
+          font-family: 'Roboto Mono', monospace
+          font-size: 14px
+          font-weight: 700
+          line-height: 20px
+        a:hover
+          color: #FFFFFF
+        .technology
+          @extend .flex_row
+          width: 100%
+          margin: 0px 0px 140px 0px
+          .technology_section
+            width: 50%
+            min-height: 480px
+            .line_container
+              display: block
+              background-color: #AF2796
+              width: 100px
+              height: 3px
+              margin: 0px 0px 48px 0px
+            .line_container_orange
+              background-color: #FD741D
+            .technology_text
+              margin: 0px 0px 24px 0px
+            .header
+              width: 360px
+            .summary
+              width: 400px
+            .illustration_container
+              margin: 40px
+              .coa
+                display: block
+                vertical-align: middle
+                width: 100%
+                height: 100%
+                max-width: 400px
+                max-height: 400px
+          .description
+            padding: 0px 0px 40px 0px
+          .left
+            margin: 0px 40px 0px 0px
+          .right
+            margin: 0px 0px 0px 40px
+          .second_row
+            min-height: 460px
+          .image_section
+            background-image: asset-url("sampling.jpg")
+            background-position: 50% 50%
+            background-size: cover
+            background-repeat: no-repeat
+            border-radius: 8px
+        .orange
+          color: #FD741D
+
+  // contact box
+
+  .box_contact_container
+    width: 100%
+    background-color: #FFFFFF
+    .box_contact
+      @extend .flex_col
+      width: 100%
+      max-width: 1280px
+      background-color: #FFFFFF
+      padding: 120px 100px 100px 100px
+      margin: auto
+      h1
+        font-size: 22px
+        font-weight: 500
+        color: #1C6BFF
+      p
+        color: #021E5C
+        font-size: 32px
+        line-height: 48px
+      a
+        display: block
+        color: #1C6BFF
+        font-size: 16px
+        font-weight: 500
+        line-height: 24px
+      a:hover
+        color: #BFC3CB
+      .box_contact_summary
+        .box_contact_header_container
+          @extend .flex_row
+          width: 100%
+          height: 26px
+          margin: 0px 0px 40px 0px
+          .box_contact_icon
+            .full
+              width: 20px
+              height: 20px
+              margin: 3px 0px 3px 0px
+          .box_contact_header
+            margin: 0px 0px 0px 12px
+        .box_contact_summary_text
+          max-width: 864px
+          margin: 0px 0px 60px 0px
+        .get_started_contact_text
+          max-width: 463px
+      .contact_information
+        @extend .flex_col
+        .contact_details
+          @extend .flex_row
+          .contact_detail
+            margin: 0px 40px 24px 0px
+            p
+              color: $lightscale_black
+              font-size: 16px
+              line-height: 24px
+          .second_contact_detail
+            margin: 0px 0px 24px 0px
+
+  // images box
+
+  .box_images
+    @extend .flex_row
+    height: 400px
+    .image
+      width: 50%
+      height: 100%
+    .map
+      background-image: linear-gradient(180deg, rgba(28, 107, 255, .5), rgba(28, 107, 255, .5)), asset-url("map.jpg")
+      background-position: 50% 50%
+      background-size: cover
+      .map_link_cover
+        @extend .flex_col
+        justify-content: center
+        width: 100%
+        height: 100%
+        background-color: transparent
+        .map_center
+          margin: 0 auto
+          text-align: center
+          h1
+            color: #FFFFFF
+            font-size: 14px
+            font-weight: 500
+            line-height: 20px
+          p
+            color: #FFFFFF
+            font-size: 14px
+            line-height: 20px
+          .pindrop
+            margin: 0px 0px 4px 0px
+    .street
+      background-image: asset-url("street.jpg")
+      background-position: 50% 50%
+      background-size: cover
+
+  // team box
+
+  .box_team_container
+    width: 100%
+    background-color: $lightscale_dark_blue
+    .box_team
+      @extend .flex_col
+      width: 100%
+      max-width: 1280px
+      background-color: $lightscale_dark_blue
+      padding: 120px 100px 100px 100px
+      margin: auto
+      h1
+        font-size: 22px
+        font-weight: 500
+        color: $lightscale_cyan
+      span
+        color: #6BD5C8
+        font-family: 'Roboto Mono', sans-serif
+        text-align: right
+      .box_team_header_container
+        @extend .flex_row
+        width: 100%
+        height: 26px
+        margin: 0px 0px 40px 0px
+        .box_team_icon
+          padding: 0px 12px 0px 0px
+          .full
+            width: 20px
+            height: 20px
+            margin: 3px 0px 3px 0px
+        .box_team_header
+          flex-grow: 1
+      .roster
+        @extend .flex_row
+        h1
+          color: #FFFFFF
+          font-size: 16px
+          font-weight: 500
+          line-height: 20px
+        h2
+          font-family: 'Roboto Mono', sans-serif
+          color: #BFC3CC
+          font-size: 14px
+          font-weight: 400
+          line-height: 20px
+        .roster_column
+          @extend .flex_col
+          width: 50%
+          .employee
+            @extend .flex_row
+            width: 100%
+            height: 83px
+            padding: 16px 0px 16px 0px
+            border-top: solid 1px
+            border-color: #333f5b
+            .portrait_container
+              width: 50px
+              height: 50px
+              margin: 0px 20px 0px 0px
+              .portrait
+                width: 100%
+                height: 100%
+                border-radius: 25px
+            .name
+              padding: 5px 0px 5px 0px
+        .left
+          margin: 0px 40px 0px 0px
+
+  // shop box
+
+  $banner_width: 100%
+
+  .box_shop_container
+    width: 100%
+    background-color: #1C6BFF
+    .box_shop
+      @extend .flex_row
+      justify-content: center
+      width: 100%
+      max-width: 1280px
+      background-color: #1C6BFF
+      cursor: pointer
+      padding: 0px
+      margin: auto
+      .banner
+        width: $banner_width
+        height: $banner_width * 0.386478318002628
+        max-width: 761px
+
+  // footer box
+
+  .box_footer_container
+    width: 100%
+    background-color: $lightscale_black
+    .box_footer
+      @extend .flex_col
+      width: 100%
+      max-width: 1280px
+      background-color: $lightscale_black
+      padding: 120px 100px 100px 100px
+      margin: auto
+      h1
+        font-size: 22px
+        line-height: 24px
+        font-weight: 500
+        color: #FFFFFF
+        margin: 0px 0px 12px 0px
+      p
+        font-size: 16px
+        line-height: 24px
+        color: #BFC3CC
+        margin: 0px 0px 32px 0px
+      input::placeholder
+        color: #A8A8A8
+      input:focus::placeholder
+        transition: opacity 0.5s 0.5s ease
+        opacity: 0
+      .newsletter
+        max-width: 500px
+        text-align: center
+        margin: auto
+        margin-bottom: 60px
+        .field_container
+          @extend .flex_row
+          width: 100%
+          .field
+            width: 80%
+            height: 44px
+            color: $lightscale_black
+            font-size: 14px
+            border: solid 1px #FFFFFF
+            border-radius: 4px 0px 0px 4px
+            padding: 0px 0px 0px 12px
+            -webkit-appearance: none
+            -moz-appearance: none
+          .field:focus
+            outline: none
+          .join
+            width: 20%
+            min-width: 80px
+            height: 44px
+            color: #FFFFFF
+            font-size: 14px
+            font-weight: 700
+            cursor: pointer
+            border: solid 1px #AF2796
+            border-radius: 0px 4px 4px 0px
+            background-color: #AF2796
+            text-align: center
+            -webkit-appearance: none
+            -moz-appearance: none
+          .join:hover
+            background-color: #B4419F
+      .instagram_roll
+        @extend .flex_row
+        width: 100%
+        margin: 0px 0px 60px 0px
+        .instagram_roll_row
+          @extend .flex_row
+          width: 50%
+          .instagram_image
+            display: inline-block
+            height: 100%
+            min-width: 91px
+            min-height: 91px
+            max-width: 127px
+            max-height: 127px
+            border-radius: 2px
+            margin: 0px 8px 0px 0px
+            .last_cover
+              left: 0px
+              top: 0px
+              bottom: 0px
+              right: 0px
+              min-width: 91px
+              min-height: 91px
+              max-width: 127px
+              max-height: 127px
+              z-index: 1000
+            .instagram_cover
+              @extend .flex_col
+              justify-content: center
+              width: 100%
+              height: 100%
+              background: rgba(232, 61, 152, 0.7)
+              border-radius: 2px
+              position: absolute
+              left: 0px
+              top: 0px
+              bottom: 0px
+              right: 0px
+              z-index: 1000
+              text-align: center
+              h1
+                font-family: 'Roboto Mono', sans-serif
+                color: #FFFFFF
+                font-size: 14px
+                font-weight: 600
+                line-height: 20px
+                margin: 4px 0px 0px 0px
+              .icon
+                margin: 0 auto
+                width: 20%
+                height: 20%
+            .instagram_cover:hover
+              background-image: -webkit-linear-gradient(270deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1))
+              background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1))
+            .full
+              display: block
+              width: 100%
+              height: auto
+              border-radius: 2px
+            .cloaked
+              visibility: hidden
+          .marginless
+            margin: 0px
+          .last
+            background: linear-gradient(0deg, rgba(232, 61, 152, 0.7), rgba(232, 61, 152, 0.7)), asset-url("instagram9.jpg") no-repeat
+            background-size: contain
+          .last:hover
+            background: linear-gradient(0deg, rgba(232, 3, 222, 0.7), rgba(232, 3, 222, 0.7)), asset-url("instagram8.jpg") no-repeat
+            background-size: contain
+      .footer
+        @extend .flex_row
+        width: 100%
+        padding: 40px 0px 0px 0px
+        border-top: solid 1px #1A2845
+        h1
+          color: #FFFFFF
+          font-size: 16px
+          font-weight: 500
+          line-height: 24px
+        a
+          display: block
+        a, p
+          color: #BFC3CC
+          font-size: 16px
+          line-height: 24px
+        .footer_column
+          @extend .flex_col
+          width: 25%
+          margin: 0px 0px 40px 0px
+          .footer_link
+            @extend .flex_row
+            width: 100%
+            height: 24px
+            margin: 0px 0px 4px 0px
+            .footer_icon
+              margin: 0px 7px 0px 0px
+          .footer_link:hover
+            a, p
+              color: #FFFFFF
+          .footer_link_double
+            @extend .flex_col
+            width: 100%
+            height: 56px
+          .footer_link_double:hover
+            p
+              color: #FFFFFF
+          .footer_header
+            width: 100%
+            margin: 0px 0px 7px 0px
+        .footer_column_logo
+          width: 25%
+      .copyright
+        width: 100%
+        text-align: center
+        margin: 60px 0px 0px 0px
+        h1
+          color: #BFC3CC
+          font-size: 12px
+          font-weight: 600
+          margin: 0px
+        a
+          color: #BFC3CC
+          text-decoration: underline
+          font-size: 12px
+          font-weight: 600
+          margin: 0px
+        a:hover
+          color: #FFFFFF
+
+  // pricing
+
+  .box_pricing_container
+    width: 100%
+    background-color: #FFFFFF
+    .box_pricing
+      @extend .flex_col
+      width: 100%
+      max-width: 1280px
+      background-color: #FFFFFF
+      color: $lightscale_dark_blue
+      margin: auto
+      padding: 160px 100px 100px 100px
+      h1
+        font-size: 72px
+        line-height: 72px
+        font-weight: 700
+        color: $lightscale_dark_blue
+        letter-spacing: -2.7px
+        margin: 0px 0px 0px 0px
+      p
+        display: inline
+        color: #667084
+        font-size: 22px
+        line-height: 22px
+      span
+        color: #B11F98
+        font-weight: 500
+        font-size: 22px
+      .pricing_header
+        width: 100%
+        text-align: center
+        margin: 40px 0px 100px 0px
+        .pricing_header_summary
+          width: 100%
+          max-width: 550px
+          margin: 22px auto 32px auto
+        .button
+          display: block
+          width: 255px
+          height: 48px
+          color: #FFFFFF
+          background-color: #AF2796
+          text-decoration: none
+          font-size: 18px
+          font-weight: 600
+          border-radius: 4px
+          text-align: center
+          cursor: pointer
+          box-sizing: border-box
+          white-space: nowrap
+          padding: 12px 12px 0px 12px
+          margin: 0 auto
+        .button:hover
+          background-image: -webkit-linear-gradient(270deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1))
+          background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1))
+        .button:active
+          background-image: -webkit-linear-gradient(270deg, rgba(0, 16, 50, .12), rgba(0, 16, 50, .12))
+          background-image: linear-gradient(180deg, rgba(0, 16, 50, .12), rgba(0, 16, 50, .12))
+      .pricing_tests
+        @extend .flex_col
+        width: 100%
+        margin: 40px 0px 0px 0px
+        h2
+          color: $lightscale_black
+          font-size: 22px
+          font-weight: 600
+          line-height: 29px
+          margin: 0px 0px 10px 0px
+        h3, h4
+          font-family: 'Roboto Mono', sans-serif
+          font-size: 28px
+          vertical-align: middle
+        h3
+          color: #AF2796
+        h4
+          color: #00B667
+        h5, h6
+          font-size: 16px
+          font-weight: 600
+          margin: 0px 0px 16px 0px
+        h5
+          color: #00B667
+        h6
+          color: #AF2796
+        p
+          font-family: 'Roboto Mono', sans-serif
+          color: #667084
+          font-size: 14px
+          line-height: 22px
+          display: block
+        .pricing_test
+          @extend .flex_row
+          min-height: 58px
+          border-top: solid 1px #E5E7EA
+          padding: 20px 0px 20px 0px
+          .pricing_test_summary
+            height: 100%
+            flex-grow: 1
+          .pricing_test_price
+            @extend .flex_col
+            justify-content: center
+            min-height: inherit
+            margin: 0px 0px 0px 25px
+            .button
+              display: inline-block
+              height: 34px
+              color: #FFFFFF
+              background-color: #00B667
+              text-decoration: none
+              font-size: 13px
+              font-weight: 600
+              line-height: 19px
+              border-radius: 4px
+              text-align: center
+              cursor: pointer
+              box-sizing: border-box
+              white-space: nowrap
+              padding: 8px 16px 9px 16px
+            .button:hover
+              background-image: -webkit-linear-gradient(270deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1))
+              background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1))
+            .button:active
+              background-image: -webkit-linear-gradient(270deg, rgba(0, 16, 50, .12), rgba(0, 16, 50, .12))
+              background-image: linear-gradient(180deg, rgba(0, 16, 50, .12), rgba(0, 16, 50, .12))
+        .pricing_tests_header
+          width: 100%
+      .purple
+        color: #B11F98
+        font-weight: 500
+
+  // terms of service box
+
+  .box_terms_container
+    width: 100%
+    background-color: #FFFFFF
+    .box_terms
+      @extend .flex_col
+      width: 100%
+      max-width: 1280px
+      background-color: #FFFFFF
+      padding: 160px 100px 100px 100px
+      margin: auto
+      h1
+        font-size: 40px
+        font-weight: 700
+        color: #021E5C
+        margin: 0px 0px 40px 0px
+      h2
+        color: #021E5C
+        font-size: 20px
+        font-weight: 500
+        margin: 0px 0px 20px 0px
+      p
+        color: #021E5C
+        font-size: 18px
+        margin: 0px 0px 40px 0px
+      a
+        display: block
+        color: #021E5C
+        font-size: 16px
+        font-weight: 500
+        line-height: 24px
+        text-decoration: underline
+      a:hover
+        color: #647084
+      .box_terms_summary
+        .box_terms_header_container
+          @extend .flex_row
+          width: 100%
+          height: 26px
+          margin: 0px 0px 40px 0px
+          .box_termst_icon
+            .full
+              width: 20px
+              height: 20px
+              margin: 3px 0px 3px 0px
+          .box_terms_header
+            margin: 0px 0px 0px 12px
+        .box_terms_summary_text
+          max-width: 864px
+          margin: 0px 0px 60px 0px
+        .get_started_contact_text
+          max-width: 463px
+      .terms_information
+        @extend .flex_col
+        .terms_details
+          @extend .flex_row
+          .terms_detail
+            margin: 0px 40px 24px 0px
+            p
+              color: $lightscale_black
+              font-size: 16px
+              line-height: 24px
+          .second_contact_detail
+            margin: 0px 0px 24px 0px
+
+// mobile ***************************************************************************************************************
+
+@media (min-width: 992px)
+  .home
+    #big_menu, #big_menu_pricing
+      display: none
+    .nav_menu
+      display: none
+
+@media (max-width: 991px)
+  .home
+    .navbar_container
+      .navbar
+        height: 112px
+        padding: 32px 60px 32px 60px
+        .nav_links
+          #big_menu, #big_menu_pricing
+            display: block
+          .nav_link, .nav_link_jobs, .nav_button
+            display: none
+          .nav_menu
+            display: inline
+            .menu
+              margin: 18px 0px 18px 0px
+    .box_introduction_container
+      .box_introduction
+        .splash_container
+          padding: 0px 0px 0px 60px
+    .box_services_container
+      .box_services
+        padding: 120px 60px 40px 60px
+        .services_showcase
+          .services
+            flex-direction: column-reverse
+            margin: 0px 0px 80px 0px
+            .services_image
+              width: 100%
+              height: 340px
+              background-size: 240px 240px
+              margin: 0px
+            .services_section
+              width: 100%
+              margin: 0px
+              .button_extended
+                width: 100%
+                height: 44px
+                text-decoration: none
+                font-size: 16px
+                line-height: 20px
+                border-radius: 4px
+                padding: 13px 16px 9px 16px
+    .box_technology_container
+      .box_technology
+        padding: 120px 60px 40px 60px
+        .ovals
+          margin: 0px 0px 80px 0px
+        .technology_showcase
+          .technology
+            flex-direction: column
+            margin: 0px 0px 80px 0px
+            .technology_section
+              width: 100%
+              min-height: 0px
+              .illustration_container
+                .coa
+                  margin: 0 auto
+            .coa_section
+              display: block
+              background-color: #AF2796
+              border-radius: 8px
+            .image_section
+              min-height: 460px
+              order: 2
+            .left
+              margin: 0px 0px 0px 0px
+            .right
+              margin: 0px 0px 0px 0px
+    .box_contact_container
+      .box_contact
+        padding: 120px 60px 40px 60px
+    .box_team_container
+      .box_team
+        padding: 120px 60px 40px 60px
+    .box_shop_container
+      .box_shop
+        padding: 0px 60px 0px 60px
+    .box_footer_container
+      .box_footer
+        padding: 120px 60px 40px 60px
+        .instagram_roll
+          flex-direction: column
+          .instagram_roll_row
+            flex-direction: row
+            width: 100%
+            .instagram_image
+              min-width: 62px
+              min-height: 62px
+              max-width: 209.75px
+              max-height: 209.75px
+              margin: 0px 8px 8px 0px
+              .instagram_cover
+                min-height: 62px
+                max-height: 209.75px
+                h1
+                  font-size: 120%
+        .footer
+          .footer_column_logo
+            display: none
+          .footer_column
+            width: auto
+            flex-grow: 1
+    .box_get_started_container
+      .box_get_started
+        padding: 172px 60px 100px 60px
+        .content
+          max-width: 100%
+          .buttons
+            .button
+              width: 50%
+    .box_pricing_container
+      .box_pricing
+        padding: 172px 60px 100px 60px
+
+@media (max-width: 767px)
+  .home
+    .anchor_services
+      top: -148px
+    .anchor_technology
+      top: -174px
+    .anchor_contact
+      top: -174px
+    .anchor_interpreting_potency_1
+      top: -80px
+    .anchor_interpreting_potency_2
+      top: -80px
+    .anchor_interpreting_potency_3
+      top: -80px
+    .nav_menu
+      top: 34px
+      right: 38px
+    .navbar_container
+      .navbar
+        height: 88px
+        padding: 20px 38px 20px 20px
+        .logo_space
+          flex-grow: 1
+          .logo
+            width: 136px
+            height: 40.797px
+    .box_blog_container
+      .box_blog
+        padding: 80px 20px 40px 20px
+        .blog_post
+          h1
+            font-size: 42px
+            line-height: 46px
+          h2
+            font-size: 16px
+            line-height: 24px
+    .box_blog_container
+      .box_collapsed_blog
+        max-width: 100%
+        padding: 115px 20px 100px 20px
+        .collapsed_blog_post
+          flex-direction: column-reverse
+          height: auto
+          h3
+            margin: 0px 0px 20px 0px
+          .collapsed_blog_post_image_container
+            width: 100%
+            height: 50%
+          .collapsed_blog_post_header_container
+            width: 100%
+            height: 50%
+            padding: 0px
+            .collapsed_blog_post_headers
+              max-width: 80%
+    .box_introduction_container
+      .box_introduction
+        padding: 80px 0px 40px 0px
+        h1, h2
+          font-size: 56px
+          line-height: 56px
+        h3, h4
+          font-size: 14px
+        .splash_container
+          flex-direction: column
+          padding: 0px 0px 0px 20px
+          .headers_container
+            display: block
+            width: 100%
+            margin: 0px 0px 60px 0px
+            .large_headers
+              padding: 0px 24px 0px 0px
+              margin: 32px 0px 20px 0px
+    .box_services_container
+      .box_services
+        padding: 60px 20px 40px 20px
+        h3
+          font-size: 40px
+          line-height: 44px
+        p
+          font-size: 24px
+          line-height: 36px
+        .box_services_summary
+          margin: 0px 0px 80px 0px
+    .box_technology_container
+      .box_technology
+        padding: 60px 20px 40px 20px
+        .box_technology_summary
+          p
+            font-size: 24px
+            line-height: 36px
+        .ovals
+          flex-direction: column
+          .oval_column
+            width: 100%
+            margin: 0px 0px 40px 0px
+            max-width: 100%
+            .oval_section
+              max-height: 727px
+        .technology_showcase
+          h1
+            font-size: 40px
+            line-height: 44px
+    .box_contact_container
+      .box_contact
+        padding: 60px 20px 40px 20px
+        .box_contact_summary
+          p
+            font-size: 24px
+            line-height: 36px
+    .box_images
+      .map
+        width: 100%
+      .street
+        display: none
+    .box_team_container
+      .box_team
+        padding: 80px 20px 40px 20px
+        .roster
+          flex-direction: column
+          .roster_column
+            width: 100%
+          .left
+            margin: 0px
+    .box_shop_container
+      .box_shop
+        padding: 0px 20px 0px 20px
+    .box_footer_container
+      .box_footer
+        padding: 80px 20px 40px 20px
+        .instagram_roll
+          .instagram_roll_row
+            .instagram_image
+              margin: 0px 4px 8px 4px
+    .box_get_started_container
+      .box_get_started
+        padding: 140.797px 20px 40px 20px
+        h1
+          font-size: 56px
+          line-height: 56px
+        p
+          max-width: 450px
+          font-size: 24px
+          line-height: 30px
+        .content
+          max-width: 100%
+          .buttons
+            flex-direction: column
+            .button
+              width: 100%
+            .pricing
+              margin: 12px 0px 0px 0px
+    .box_pricing_container
+      .box_pricing
+        padding: 100px 20px 40px 20px
+        h1
+          font-size: 48px
+          line-height: 48px
+        p, span
+          font-size: 20px
+          line-height: 20px
+        .pricing_header
+          margin: 40px 0px 40px 0px
+          .pricing_header_summary
+            width: 90%
+    .box_testimonials_container
+      .box_testimonials
+        q
+          font-size: 18px
+          line-height: 10px
+        q::before
+          font-size: 32px
+          line-height: 15px
+        q::after
+          font-size: 32px
+          line-height: 15px
+        h2
+          font-size: 14px
+          font-weight: 600
+        h3, a
+          font-size: 14px
+
+@media (max-width: 602px)
+  .home
+    .box_blog_container
+      .box_collapsed_blog
+        .collapsed_blog_post
+          .collapsed_blog_post_header_container
+            .collapsed_blog_post_headers
+              max-width: 100%
+
+@media (max-width: 547px)
+  .home
+    .box_introduction_container
+      .box_introduction
+        .splash_container
+          .headers_container
+            .large_headers
+              padding: 0px 79px 0px 0px
+    .box_footer_container
+      .box_footer
+        // .instagram_roll
+        //   .instagram_roll_row
+        //     .instagram_image
+        .footer
+          flex-wrap: wrap
+          .footer_column
+            width: 50%
+          .footer_column_logo
+            width: 10%
+
+@media (max-width: 453px)
+  .home
+    .box_technology_container
+      .box_technology
+        .technology_showcase
+          .technology
+            .technology_section
+              .header
+                width: 100%
+              .summary
+                width: 100%
+
+@media (max-width: 414px)
+  .home
+    .box_services_container
+      .box_services
+        .services_showcase
+          .services
+            .services_section
+              .test_list
+                .test
+                  .test_label_wrap
+                    h1
+                      margin: 0px 0px 0px 10px
+
+@media (max-width: 413px)
+  .home
+    .box_blog_container
+      .box_blog
+        padding: 60px 20px 40px 20px
+        .blog_post
+          h1
+            font-size: 40px
+            line-height: 44px
+            margin: 20px 0px 10px 0px
+          h2
+            font-size: 16px
+            line-height: 24px
+    .box_footer_container
+      .footer
+        .second
+          padding: 0px 0px 0px 20px
+    .box_contact_container
+      .box_contact
+        .box_contact_summary
+          .contact_details
+            .contact_detail
+              margin: 0px 30px 24px 0px
+            .second_contact_detail
+              margin: 0px 0px 24px 0px
+
+@media (max-width: 374px)
+  .home
+    .box_contact_container
+      .box_contact
+        .box_contact_summary
+          .contact_details
+            flex-direction: column
+
+@media (max-width: 360px)
+  .home
+    #big_menu
+      .menu_get_started
+        font-size: 34px
+    #big_menu_pricing
+      .menu_pricing_get_started
+        font-size: 34px
+
+@media (max-width: 350px)
+  .home
+    .box_introduction_container
+      .box_introduction
+        .splash_container
+          .headers_container
+            .small_headers
+              width: 300px
+              margin: 0px 20px 0px 0px
+
+@media (max-width: 355px)
+  .home
+    .box_services_container
+      .box_services
+        .services_showcase
+          .services
+            .services_section
+              .test_list
+                .wrap_non_cannabis
+                  height: 64px
+
+@media (min-width: 415px)
+  .home
+    #big_menu, #big_menu_pricing
+      .social_media_bar
+        max-width: 312px
+
+@media (max-height: 480px)
+  .home
+    #big_menu, #big_menu_pricing
+      font-size: 38px
+      .social_media_bar
+        margin: 15px 0px 0px 0px
+
+@media (max-height: 667px)
+  .home
+    .box_pricing_container
+      .box_pricing
+        .pricing_header
+          margin: 20px 0px 20px 0px
+          .pricing_header_summary
+            margin: 22px auto 22px auto
+
+@media (min-width: 992px) and (max-width: 1280px)
+  .home
+    .box_blog_container
+      .box_collapsed_blog
+        max-width: 100%
+        padding: 147px 100px 100px 100px
+        .collapsed_blog_post
+          margin: 0px 0px 0px 0px
+
+@media (min-width: 768px) and (max-width: 991px)
+  .home
+    .box_blog_container
+      .box_collapsed_blog
+        padding: 147px 60px 100px 60px
+        .collapsed_blog_post
+          flex-direction: column-reverse
+          height: auto
+          h3
+            margin: 0px 0px 20px 0px
+          .collapsed_blog_post_image_container
+            width: 100%
+            height: 50%
+          .collapsed_blog_post_header_container
+            width: 100%
+            height: 50%
+            padding: 0px
+            .collapsed_blog_post_headers
+              max-width: 80%
+
+@media (min-width: 992px) and (max-width: 1182px)
+  .home
+    .box_services_container
+      .box_services
+        .services_showcase
+          .services
+            .services_section
+              .test_list
+                .test
+                  .test_label_wrap
+                    h1
+                      margin: 0px 0px 0px 10px
+

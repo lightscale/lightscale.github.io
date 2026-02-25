@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Sample-Request" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sent" transform="translate(-98.000000, -172.000000)" fill="#00B667">
+            <path d="M109,192 C104.037,192 100,187.963 100,183 C100,178.037 104.037,174 109,174 C113.963,174 118,178.037 118,183 C118,187.963 113.963,192 109,192 M109,172 C115.075,172 120,176.925 120,183 C120,189.075 115.075,194 109,194 C102.925,194 98,189.075 98,183 C98,176.925 102.925,172 109,172 Z M113.293,179.3789 L107.636,185.0359 L104.808,182.2069 C104.417,181.8169 103.784,181.8169 103.394,182.2069 C103.003,182.5969 103.003,183.2309 103.394,183.6209 L107.636,187.8639 L114.707,180.7929 C115.098,180.4019 115.098,179.7699 114.707,179.3789 C114.316,178.9879 113.684,178.9879 113.293,179.3789 Z" id="Check"></path>
+        </g>
+    </g>
+</svg>

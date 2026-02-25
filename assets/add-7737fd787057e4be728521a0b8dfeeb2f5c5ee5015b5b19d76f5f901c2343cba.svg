@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="✅-Sample-request" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sample-Request-1" transform="translate(-102.000000, -1370.000000)" fill="#1C6BFF">
+            <path d="M112,1388 C107.589,1388 104,1384.411 104,1380 C104,1375.589 107.589,1372 112,1372 C116.411,1372 120,1375.589 120,1380 C120,1384.411 116.411,1388 112,1388 M112,1370 C117.523,1370 122,1374.477 122,1380 C122,1385.523 117.523,1390 112,1390 C106.477,1390 102,1385.523 102,1380 C102,1374.477 106.477,1370 112,1370 Z M116,1379 L113,1379 L113,1376 C113,1375.448 112.553,1375 112,1375 C111.447,1375 111,1375.448 111,1376 L111,1379 L108,1379 C107.447,1379 107,1379.448 107,1380 C107,1380.552 107.447,1381 108,1381 L111,1381 L111,1384 C111,1384.552 111.447,1385 112,1385 C112.553,1385 113,1384.552 113,1384 L113,1381 L116,1381 C116.553,1381 117,1380.552 117,1380 C117,1379.448 116.553,1379 116,1379 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

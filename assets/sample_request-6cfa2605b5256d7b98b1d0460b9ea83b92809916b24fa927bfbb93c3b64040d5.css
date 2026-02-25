@@ -1,0 +1,1812 @@
+/* line 11, app/assets/stylesheets/sample_request.sass */
+html, body, button, input, select, textarea {
+  font-family: "Graphik Web", sans-serif;
+  font-size: 14px;
+}
+
+/* line 15, app/assets/stylesheets/sample_request.sass */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  background-color: #AF2796;
+  color: #001032;
+}
+
+/* line 23, app/assets/stylesheets/sample_request.sass */
+div, input, textarea {
+  line-height: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* line 29, app/assets/stylesheets/sample_request.sass */
+select:focus {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+}
+
+/* line 33, app/assets/stylesheets/sample_request.sass */
+label {
+  display: block;
+  color: #001032;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px 0px 7px 0px;
+}
+
+/* line 39, app/assets/stylesheets/sample_request.sass */
+span {
+  display: inline;
+  color: #667084;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* line 44, app/assets/stylesheets/sample_request.sass */
+a {
+  text-decoration: none;
+}
+
+/* line 46, app/assets/stylesheets/sample_request.sass */
+p {
+  display: inline;
+}
+
+/* line 48, app/assets/stylesheets/sample_request.sass */
+strong {
+  font-weight: bold;
+}
+
+/* line 50, app/assets/stylesheets/sample_request.sass */
+em {
+  font-style: italic;
+}
+
+/* line 53, app/assets/stylesheets/sample_request.sass */
+.flex_row, .page-container .left-column .sample_request .form_header .navigation, .page-container .left-column .section .request_message .request_sent, .page-container .left-column .section .add_batch, .page-container .left-column .section .error_section, .page-container .left-column .footer_confirm_container .section .buttons, .page-container .left-column .section .entry_full .radio_container .radio_question, .page-container .left-column .gray_section .entry_full .radio_container .radio_question, .page-container .left-column .notes_section .entry_full .radio_container .radio_question, .page-container .left-column .section .entry_full .radio_container .radio_answers, .page-container .left-column .gray_section .entry_full .radio_container .radio_answers, .page-container .left-column .notes_section .entry_full .radio_container .radio_answers, .page-container .left-column .section .entry_full .tests .test, .page-container .left-column .gray_section .entry_full .tests .test, .page-container .left-column .notes_section .entry_full .tests .test, .page-container .left-column .section .entry_check, .page-container .left-column .gray_section .entry_check, .page-container .left-column .notes_section .entry_check, .page-container .left-column .section .entry_check_appended, .page-container .left-column .gray_section .entry_check_appended, .page-container .left-column .notes_section .entry_check_appended, .page-container .left-column .section .entry_half, .page-container .left-column .gray_section .entry_half, .page-container .left-column .notes_section .entry_half, .page-container .left-column .section .entry_full .label_container, .page-container .left-column .section .entry_half .label_container, .page-container .left-column .section .entry_half_container .label_container, .page-container .left-column .section .entry_check .label_container, .page-container .left-column .gray_section .entry_full .label_container, .page-container .left-column .gray_section .entry_half .label_container, .page-container .left-column .gray_section .entry_half_container .label_container, .page-container .left-column .gray_section .entry_check .label_container, .page-container .left-column .notes_section .entry_full .label_container, .page-container .left-column .notes_section .entry_half .label_container, .page-container .left-column .notes_section .entry_half_container .label_container, .page-container .left-column .notes_section .entry_check .label_container, .page-container .left-column .section .entry_full .text_long_error .row, .page-container .left-column .section .entry_half .text_long_error .row, .page-container .left-column .section .entry_half_container .text_long_error .row, .page-container .left-column .section .entry_check .text_long_error .row, .page-container .left-column .gray_section .entry_full .text_long_error .row, .page-container .left-column .gray_section .entry_half .text_long_error .row, .page-container .left-column .gray_section .entry_half_container .text_long_error .row, .page-container .left-column .gray_section .entry_check .text_long_error .row, .page-container .left-column .notes_section .entry_full .text_long_error .row, .page-container .left-column .notes_section .entry_half .text_long_error .row, .page-container .left-column .notes_section .entry_half_container .text_long_error .row, .page-container .left-column .notes_section .entry_check .text_long_error .row, .page-container .left-column .section .entry_confirmation .attribute_row, .page-container .left-column .gray_section .entry_confirmation .attribute_row, .page-container .left-column .notes_section .entry_confirmation .attribute_row, .page-container .left-column .section .batch_header, .page-container .left-column .gray_section .batch_header, .page-container .left-column .notes_section .batch_header, .page-container .left-column .section .section_header_icon, .page-container .left-column .gray_section .section_header_icon, .page-container .left-column .notes_section .section_header_icon, .page-container .left-column .field_container, .page-container .left-column .field_container_error {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+/* line 61, app/assets/stylesheets/sample_request.sass */
+.flex_col, .page-container .left-column .section, .page-container .left-column .section .request_message, .page-container .left-column .section .entry_full .radio_container, .page-container .left-column .gray_section .entry_full .radio_container, .page-container .left-column .notes_section .entry_full .radio_container, .page-container .left-column .section .entry_full .tests, .page-container .left-column .gray_section .entry_full .tests, .page-container .left-column .notes_section .entry_full .tests, .page-container .left-column .section .entry_half_container, .page-container .left-column .gray_section .entry_half_container, .page-container .left-column .notes_section .entry_half_container, .page-container .left-column .section .entry_full .label_half_container, .page-container .left-column .section .entry_half .label_half_container, .page-container .left-column .section .entry_half_container .label_half_container, .page-container .left-column .section .entry_check .label_half_container, .page-container .left-column .gray_section .entry_full .label_half_container, .page-container .left-column .gray_section .entry_half .label_half_container, .page-container .left-column .gray_section .entry_half_container .label_half_container, .page-container .left-column .gray_section .entry_check .label_half_container, .page-container .left-column .notes_section .entry_full .label_half_container, .page-container .left-column .notes_section .entry_half .label_half_container, .page-container .left-column .notes_section .entry_half_container .label_half_container, .page-container .left-column .notes_section .entry_check .label_half_container, .page-container .left-column .section .entry_full .helper_content, .page-container .left-column .section .entry_half .helper_content, .page-container .left-column .section .entry_half_container .helper_content, .page-container .left-column .section .entry_check .helper_content, .page-container .left-column .gray_section .entry_full .helper_content, .page-container .left-column .gray_section .entry_half .helper_content, .page-container .left-column .gray_section .entry_half_container .helper_content, .page-container .left-column .gray_section .entry_check .helper_content, .page-container .left-column .notes_section .entry_full .helper_content, .page-container .left-column .notes_section .entry_half .helper_content, .page-container .left-column .notes_section .entry_half_container .helper_content, .page-container .left-column .notes_section .entry_check .helper_content, .page-container .left-column .section .entry_full .text_long_error, .page-container .left-column .section .entry_half .text_long_error, .page-container .left-column .section .entry_half_container .text_long_error, .page-container .left-column .section .entry_check .text_long_error, .page-container .left-column .gray_section .entry_full .text_long_error, .page-container .left-column .gray_section .entry_half .text_long_error, .page-container .left-column .gray_section .entry_half_container .text_long_error, .page-container .left-column .gray_section .entry_check .text_long_error, .page-container .left-column .notes_section .entry_full .text_long_error, .page-container .left-column .notes_section .entry_half .text_long_error, .page-container .left-column .notes_section .entry_half_container .text_long_error, .page-container .left-column .notes_section .entry_check .text_long_error, .page-container .left-column .section .entry_confirmation, .page-container .left-column .gray_section .entry_confirmation, .page-container .left-column .notes_section .entry_confirmation, .page-container .left-column .section .entry_confirmation .attribute_row .attribute_tests, .page-container .left-column .gray_section .entry_confirmation .attribute_row .attribute_tests, .page-container .left-column .notes_section .entry_confirmation .attribute_row .attribute_tests {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+/* line 72, app/assets/stylesheets/sample_request.sass */
+.page-container {
+  position: static;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 78, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column {
+  width: 50%;
+  height: auto;
+  min-height: 100vh;
+  min-width: 700px;
+  padding: 32px 0px 4px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  background-color: #FFFFFF;
+  color: #000;
+}
+
+/* line 90, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .sample_request {
+  max-width: 500px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  background-color: #FFFFFF;
+}
+
+/* line 96, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .sample_request label {
+  display: inline-block;
+  color: #001032;
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 100px;
+  margin: 0px 0px 7px 0px;
+}
+
+/* line 103, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .sample_request input {
+  display: inline;
+}
+
+/* line 105, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .sample_request li {
+  margin: 0px 0px 7px 0px;
+}
+
+/* line 107, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .sample_request .form_header {
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+/* line 110, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .sample_request .form_header h1 {
+  color: #AF2796;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -2.7px;
+  margin: 30px 0px 0px 0px;
+}
+
+/* line 117, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .sample_request .form_header .navigation {
+  margin: 45px 0px 0px 0px;
+}
+
+/* line 120, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .sample_request .form_header .navigation h3 {
+  font-size: 14px;
+  color: #AF2796;
+  font-weight: 500;
+}
+
+/* line 124, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .sample_request .form_header .navigation h4 {
+  color: #667084;
+  font-weight: 500;
+}
+
+/* line 127, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .sample_request .form_header .navigation .step_chevron {
+  padding: 0px 8px 0px 8px;
+}
+
+/* line 129, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section {
+  max-width: 500px;
+  margin-right: 100px;
+  margin-bottom: 40px;
+  margin-left: auto;
+}
+
+/* line 135, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section input {
+  display: inline;
+}
+
+/* line 137, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section li {
+  margin: 0px 0px 7px 0px;
+}
+
+/* line 139, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section h1 {
+  color: #001032;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 20px 0px 24px 12px;
+}
+
+/* line 144, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section h2 {
+  color: #001032;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  margin: 0px 0px 6px 0px;
+}
+
+/* line 150, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section a {
+  color: #1C6BFF;
+  text-decoration: none;
+}
+
+/* line 153, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section h3 {
+  color: #001032;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0px 0px 5px 0px;
+}
+
+/* line 158, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section h4 {
+  color: #667084;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* line 162, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .request_message {
+  padding: 0px 0px 40px 0px;
+}
+
+/* line 165, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .request_message p {
+  color: #001032;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+/* line 170, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .request_message .request_sent {
+  padding: 0px 0px 25px 0px;
+}
+
+/* line 173, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .request_message .request_sent h6 {
+  color: #00B667;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* line 177, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .request_message .request_sent .icon {
+  padding: 0px 10px 0px 0px;
+}
+
+/* line 179, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .request_message .request_sent .header {
+  padding: 2px 0px 0px 0px;
+}
+
+/* line 181, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .marginless {
+  margin: 0px 0px 0px 0px;
+}
+
+/* line 183, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .add_batch {
+  height: 65px;
+  padding: 0px 0px 0px 0px;
+  cursor: pointer;
+}
+
+/* line 188, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .add_batch .icon_section {
+  min-width: 32px;
+  padding: 22px 0px 11px 0px;
+}
+
+/* line 191, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .add_batch .name_section {
+  width: 452px;
+  height: 29px;
+  padding: 23px 0px 11px 0px;
+}
+
+/* line 195, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .add_batch .name_section h1 {
+  text-decoration: none;
+  color: #1C6BFF;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+/* line 202, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .half_top input {
+  -webkit-appearance: none;
+}
+
+/* line 204, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .half_top .submit_button {
+  display: block;
+  width: 100%;
+  height: 45px;
+  color: #FFFFFF;
+  background-color: #1C6BFF;
+  text-decoration: none;
+  line-height: 37px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #1C6BFF;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* line 218, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .half_top .submit_button:hover {
+  background-color: #3D81FF;
+  border: 1px solid #3D81FF;
+  color: #FFFFFF;
+}
+
+/* line 222, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .half_top .submit_button:active {
+  background-color: #175DE0;
+  border: 1px solid #175DE0;
+  color: #D0DEF8;
+}
+
+/* line 226, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .half_bottom {
+  text-align: center;
+  padding-top: 32px;
+  line-height: 20px;
+}
+
+/* line 230, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .half_bottom .link {
+  color: #1066FF;
+}
+
+/* line 232, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .half_bottom .link:hover {
+  color: #3D81FF;
+}
+
+/* line 234, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .error_section {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 0px 0px 0px 0px;
+  margin: 15px 0px 0px 0px;
+}
+
+/* line 240, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .error_section .icon_section {
+  min-width: 32px;
+  padding: 0px 0px 11px 3px;
+}
+
+/* line 243, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .error_section .header_section {
+  padding: 3px 0px 3px 0px;
+}
+
+/* line 245, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .error_section .header_section h1 {
+  font-size: 15px;
+  line-height: 17px;
+  color: #FF3A4F;
+  margin: 0px;
+}
+
+/* line 250, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .footer {
+  width: 100%;
+  text-align: center;
+  padding: 32px 0px 0px 0px;
+}
+
+/* line 254, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .footer h1 {
+  font-family: 'Roboto Mono', monospace;
+  color: #667084;
+  font-size: 10px;
+  margin: 0px;
+}
+
+/* line 259, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .footer_confirm_container, .page-container .left-column .notes_confirm_container {
+  border-top: solid 1px #E0E2E6;
+}
+
+/* line 265, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .footer_confirm_container .section .buttons .button_left {
+  padding-right: 6px;
+  width: 250px;
+}
+
+/* line 268, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .footer_confirm_container .section .buttons .button_right {
+  padding-left: 6px;
+  width: 250px;
+}
+
+/* line 271, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .footer_confirm_container .section .buttons .submit_button_half {
+  display: block;
+  height: 45px;
+  width: 100%;
+  color: #FFFFFF;
+  background-color: #1C6BFF;
+  text-decoration: none;
+  line-height: 37px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #1C6BFF;
+  border-radius: 4px;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* line 287, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .footer_confirm_container .section .buttons .submit_button_half:hover {
+  background-color: #3D81FF;
+  border: 1px solid #3D81FF;
+  color: #FFFFFF;
+}
+
+/* line 291, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .footer_confirm_container .section .buttons .submit_button_half:active {
+  background-color: #175DE0;
+  border: 1px solid #175DE0;
+  color: #D0DEF8;
+}
+
+/* line 295, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .footer_confirm_container .section .buttons .edit_button_half {
+  display: block;
+  height: 45px;
+  width: 100%;
+  color: #667084;
+  background-color: #FFF;
+  text-decoration: none;
+  line-height: 37px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid #667084;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* line 309, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .footer_confirm_container .section .buttons .edit_button_half:hover {
+  background-color: #F7F8F9;
+  border: 1px solid #667084;
+  color: #667084;
+}
+
+/* line 313, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .footer_confirm_container .section .buttons .edit_button_half:active {
+  background-color: #E8EAED;
+  border: 1px solid #667084;
+  color: #667084;
+}
+
+/* line 317, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .footer_confirm_container .submit_padding {
+  padding-top: 60px;
+}
+
+/* line 319, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .gray_section {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  border-color: #E0E2E6;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  background-color: #FAFAFB;
+}
+
+/* line 328, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .gray_section .add_batch_section {
+  border-top: none;
+  padding-top: 0px;
+}
+
+/* line 331, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .add_batch_gray_section:hover {
+  background-color: #F5F5F7;
+}
+
+/* line 333, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .notes_section {
+  padding-top: 40px;
+}
+
+/* line 335, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .padless_top {
+  padding-top: 0px;
+}
+
+/* line 337, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .topless {
+  border-top: 0px;
+}
+
+/* line 339, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .bottomless_border {
+  border-bottom: 0px;
+}
+
+/* line 342, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full, .page-container .left-column .gray_section .entry_full, .page-container .left-column .notes_section .entry_full {
+  width: 100%;
+  min-height: 69px;
+  padding: 0px 0px 20px 0px;
+}
+
+/* line 346, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full h1, .page-container .left-column .gray_section .entry_full h1, .page-container .left-column .notes_section .entry_full h1 {
+  color: #001032;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px 0px 12px 0px;
+}
+
+/* line 351, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full textarea, .page-container .left-column .gray_section .entry_full textarea, .page-container .left-column .notes_section .entry_full textarea {
+  -webkit-appearance: none;
+}
+
+/* line 353, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .radio_container, .page-container .left-column .gray_section .entry_full .radio_container, .page-container .left-column .notes_section .entry_full .radio_container {
+  margin: 0px 0px 0px 0px;
+}
+
+/* line 356, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .radio_container p, .page-container .left-column .gray_section .entry_full .radio_container p, .page-container .left-column .notes_section .entry_full .radio_container p {
+  font-weight: 500;
+}
+
+/* line 358, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .radio_container label, .page-container .left-column .section .entry_full .radio_container input, .page-container .left-column .gray_section .entry_full .radio_container label, .page-container .left-column .gray_section .entry_full .radio_container input, .page-container .left-column .notes_section .entry_full .radio_container label, .page-container .left-column .notes_section .entry_full .radio_container input {
+  cursor: pointer;
+}
+
+/* line 360, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .radio_container input, .page-container .left-column .gray_section .entry_full .radio_container input, .page-container .left-column .notes_section .entry_full .radio_container input {
+  width: 13px;
+  height: 13px;
+}
+
+/* line 363, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .radio_container .radio_question, .page-container .left-column .gray_section .entry_full .radio_container .radio_question, .page-container .left-column .notes_section .entry_full .radio_container .radio_question {
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+}
+
+/* line 367, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .radio_container .radio_question .help, .page-container .left-column .gray_section .entry_full .radio_container .radio_question .help, .page-container .left-column .notes_section .entry_full .radio_container .radio_question .help {
+  padding: 2px 0px 0px 20px;
+}
+
+/* line 369, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .radio_container .radio_answers, .page-container .left-column .gray_section .entry_full .radio_container .radio_answers, .page-container .left-column .notes_section .entry_full .radio_container .radio_answers {
+  width: 100%;
+  min-width: 250px;
+  margin: 0px 0px 0px 0px;
+}
+
+/* line 374, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .radio_container .radio_answers p, .page-container .left-column .gray_section .entry_full .radio_container .radio_answers p, .page-container .left-column .notes_section .entry_full .radio_container .radio_answers p {
+  margin: 0px 20px 0px 0px;
+}
+
+/* line 377, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .radio_container .radio_error p, .page-container .left-column .gray_section .entry_full .radio_container .radio_error p, .page-container .left-column .notes_section .entry_full .radio_container .radio_error p {
+  color: #FF3A4F;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px 0px 0px 10px;
+}
+
+/* line 382, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .radio_container .radio_label, .page-container .left-column .section .entry_full .radio_container .radio_button, .page-container .left-column .gray_section .entry_full .radio_container .radio_label, .page-container .left-column .gray_section .entry_full .radio_container .radio_button, .page-container .left-column .notes_section .entry_full .radio_container .radio_label, .page-container .left-column .notes_section .entry_full .radio_container .radio_button {
+  margin: 0px 5px 0px 0px;
+}
+
+/* line 384, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .radio_container_last, .page-container .left-column .gray_section .entry_full .radio_container_last, .page-container .left-column .notes_section .entry_full .radio_container_last {
+  margin: 10px 0px 0px 0px;
+}
+
+/* line 386, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_notes, .page-container .left-column .gray_section .entry_full .text_notes, .page-container .left-column .notes_section .entry_full .text_notes {
+  border: solid 1px #BFC3CB;
+  border-radius: 4px;
+  width: 100%;
+  min-height: 120px;
+  resize: vertical;
+  padding: 9px 9px 9px 9px;
+}
+
+/* line 393, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_notes:focus, .page-container .left-column .gray_section .entry_full .text_notes:focus, .page-container .left-column .notes_section .entry_full .text_notes:focus {
+  border: solid 2px #677082;
+  padding: 8px 8px 8px 8px;
+}
+
+/* line 396, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .tests, .page-container .left-column .gray_section .entry_full .tests, .page-container .left-column .notes_section .entry_full .tests {
+  width: 100%;
+  max-width: 500px;
+  border: solid 1px #BFC3CB;
+  border-radius: 4px;
+}
+
+/* line 402, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .tests label, .page-container .left-column .gray_section .entry_full .tests label, .page-container .left-column .notes_section .entry_full .tests label {
+  color: #001032;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px 0px 0px 0px;
+}
+
+/* line 407, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .tests .test, .page-container .left-column .gray_section .entry_full .tests .test, .page-container .left-column .notes_section .entry_full .tests .test {
+  width: 100%;
+  height: 44px;
+  background-color: #FFFFFF;
+  border: solid 1px #BFC3CB;
+  border-radius: 1px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  cursor: pointer;
+}
+
+/* line 418, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .tests .test .check_section, .page-container .left-column .gray_section .entry_full .tests .test .check_section, .page-container .left-column .notes_section .entry_full .tests .test .check_section {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 12px;
+  padding: 15px 16px 17px 12px;
+}
+
+/* line 424, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .tests .test .check_section input, .page-container .left-column .gray_section .entry_full .tests .test .check_section input, .page-container .left-column .notes_section .entry_full .tests .test .check_section input {
+  width: 13px;
+  height: 13px;
+}
+
+/* line 427, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .tests .test .check_section .check, .page-container .left-column .gray_section .entry_full .tests .test .check_section .check, .page-container .left-column .notes_section .entry_full .tests .test .check_section .check {
+  cursor: pointer;
+}
+
+/* line 429, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .tests .test .check_section:checked, .page-container .left-column .gray_section .entry_full .tests .test .check_section:checked, .page-container .left-column .notes_section .entry_full .tests .test .check_section:checked {
+  background-color: blue;
+}
+
+/* line 431, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .tests .test .name_section, .page-container .left-column .gray_section .entry_full .tests .test .name_section, .page-container .left-column .notes_section .entry_full .tests .test .name_section {
+  width: 460px;
+  padding: 15px 0px 14px 0px;
+}
+
+/* line 434, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .tests .test:hover, .page-container .left-column .gray_section .entry_full .tests .test:hover, .page-container .left-column .notes_section .entry_full .tests .test:hover {
+  background-color: #FAFAFB;
+}
+
+/* line 436, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .tests .first, .page-container .left-column .gray_section .entry_full .tests .first, .page-container .left-column .notes_section .entry_full .tests .first {
+  border-radius: 4px 4px 1px 1px;
+}
+
+/* line 438, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .tests .last, .page-container .left-column .gray_section .entry_full .tests .last, .page-container .left-column .notes_section .entry_full .tests .last {
+  border: hidden 1px;
+  border-radius: 1px 1px 4px 4px;
+}
+
+/* line 441, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .section_header_text, .page-container .left-column .gray_section .entry_full .section_header_text, .page-container .left-column .notes_section .entry_full .section_header_text {
+  padding: 0px 0px 3px 0px;
+}
+
+/* line 445, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_check, .page-container .left-column .gray_section .entry_check, .page-container .left-column .notes_section .entry_check {
+  width: 100%;
+  padding: 0px 0px 20px 0px;
+}
+
+/* line 450, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_check label, .page-container .left-column .gray_section .entry_check label, .page-container .left-column .notes_section .entry_check label {
+  margin: 0px 0px 0px 0px;
+}
+
+/* line 452, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_check .label_container, .page-container .left-column .gray_section .entry_check .label_container, .page-container .left-column .notes_section .entry_check .label_container {
+  width: 100%;
+  justify-content: space-between;
+  margin: 7px 0px 0px 0px;
+}
+
+/* line 456, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_check .label_container .label_name, .page-container .left-column .gray_section .entry_check .label_container .label_name, .page-container .left-column .notes_section .entry_check .label_container .label_name {
+  max-height: 30px;
+  padding: 0px 0px 0px 0px;
+}
+
+/* line 460, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_check .check_section, .page-container .left-column .gray_section .entry_check .check_section, .page-container .left-column .notes_section .entry_check .check_section {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 12px;
+  padding: 5px 19px 5px 0px;
+}
+
+/* line 466, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_check .check_section input, .page-container .left-column .gray_section .entry_check .check_section input, .page-container .left-column .notes_section .entry_check .check_section input {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+  width: 20px;
+  height: 20px;
+}
+
+/* line 472, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_check .check_section .check, .page-container .left-column .gray_section .entry_check .check_section .check, .page-container .left-column .notes_section .entry_check .check_section .check {
+  cursor: pointer;
+}
+
+/* line 474, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_check .check_section:checked, .page-container .left-column .gray_section .entry_check .check_section:checked, .page-container .left-column .notes_section .entry_check .check_section:checked {
+  background-color: blue;
+}
+
+/* line 476, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_check .name_section, .page-container .left-column .gray_section .entry_check .name_section, .page-container .left-column .notes_section .entry_check .name_section {
+  width: 460px;
+  padding: 15px 0px 14px 0px;
+}
+
+/* line 479, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_check_appended, .page-container .left-column .gray_section .entry_check_appended, .page-container .left-column .notes_section .entry_check_appended {
+  width: 100%;
+  padding: 0px 0px 20px 0px;
+}
+
+/* line 484, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_check_appended label, .page-container .left-column .gray_section .entry_check_appended label, .page-container .left-column .notes_section .entry_check_appended label {
+  font-size: 12px;
+  color: #667084;
+  margin: 3px 0px 0px 0px;
+}
+
+/* line 488, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_check_appended .label_container, .page-container .left-column .gray_section .entry_check_appended .label_container, .page-container .left-column .notes_section .entry_check_appended .label_container {
+  width: 100%;
+  justify-content: space-between;
+  margin: 7px 0px 0px 0px;
+}
+
+/* line 492, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_check_appended .label_container .label_name, .page-container .left-column .gray_section .entry_check_appended .label_container .label_name, .page-container .left-column .notes_section .entry_check_appended .label_container .label_name {
+  max-height: 30px;
+  padding: 0px 0px 0px 0px;
+}
+
+/* line 496, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_check_appended .check_section, .page-container .left-column .gray_section .entry_check_appended .check_section, .page-container .left-column .notes_section .entry_check_appended .check_section {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 12px;
+  padding: 10px 10px 0px 0px;
+}
+
+/* line 502, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_check_appended .check_section input, .page-container .left-column .gray_section .entry_check_appended .check_section input, .page-container .left-column .notes_section .entry_check_appended .check_section input {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+  width: 13px;
+  height: 13px;
+}
+
+/* line 508, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_check_appended .check_section .check, .page-container .left-column .gray_section .entry_check_appended .check_section .check, .page-container .left-column .notes_section .entry_check_appended .check_section .check {
+  cursor: pointer;
+}
+
+/* line 510, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_check_appended .check_section:checked, .page-container .left-column .gray_section .entry_check_appended .check_section:checked, .page-container .left-column .notes_section .entry_check_appended .check_section:checked {
+  background-color: blue;
+}
+
+/* line 512, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_check_appended .name_section, .page-container .left-column .gray_section .entry_check_appended .name_section, .page-container .left-column .notes_section .entry_check_appended .name_section {
+  width: 460px;
+  padding: 15px 0px 14px 0px;
+}
+
+/* line 515, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .hidden, .page-container .left-column .gray_section .hidden, .page-container .left-column .notes_section .hidden {
+  display: none;
+}
+
+/* line 517, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .bottomless_padding, .page-container .left-column .gray_section .bottomless_padding, .page-container .left-column .notes_section .bottomless_padding {
+  padding-bottom: 0px;
+}
+
+/* line 519, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_half_container, .page-container .left-column .gray_section .entry_half_container, .page-container .left-column .notes_section .entry_half_container {
+  min-height: 69px;
+  width: 100%;
+  padding: 0px;
+}
+
+/* line 524, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_half, .page-container .left-column .gray_section .entry_half, .page-container .left-column .notes_section .entry_half {
+  min-height: 69px;
+  width: 100%;
+  padding: 0px 0px 20px 0px;
+}
+
+/* line 529, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_half .half_entry_left, .page-container .left-column .gray_section .entry_half .half_entry_left, .page-container .left-column .notes_section .entry_half .half_entry_left {
+  width: 50%;
+  padding: 0px 8px 0px 0px;
+}
+
+/* line 532, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_half .half_entry_right, .page-container .left-column .gray_section .entry_half .half_entry_right, .page-container .left-column .notes_section .entry_half .half_entry_right {
+  width: 50%;
+  padding: 0px 0px 0px 8px;
+}
+
+/* line 535, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_half .half_entry_left_labeled, .page-container .left-column .gray_section .entry_half .half_entry_left_labeled, .page-container .left-column .notes_section .entry_half .half_entry_left_labeled {
+  width: 50%;
+  padding: 0px 2px 0px 0px;
+}
+
+/* line 538, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_half .half_entry_right_labeled, .page-container .left-column .gray_section .entry_half .half_entry_right_labeled, .page-container .left-column .notes_section .entry_half .half_entry_right_labeled {
+  width: 50%;
+  padding: 0px 0px 0px 2px;
+}
+
+/* line 542, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .label_container, .page-container .left-column .section .entry_half .label_container, .page-container .left-column .section .entry_half_container .label_container, .page-container .left-column .section .entry_check .label_container, .page-container .left-column .gray_section .entry_full .label_container, .page-container .left-column .gray_section .entry_half .label_container, .page-container .left-column .gray_section .entry_half_container .label_container, .page-container .left-column .gray_section .entry_check .label_container, .page-container .left-column .notes_section .entry_full .label_container, .page-container .left-column .notes_section .entry_half .label_container, .page-container .left-column .notes_section .entry_half_container .label_container, .page-container .left-column .notes_section .entry_check .label_container {
+  justify-content: space-between;
+}
+
+/* line 546, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .label_container .label_name .field_with_errors, .page-container .left-column .section .entry_half .label_container .label_name .field_with_errors, .page-container .left-column .section .entry_half_container .label_container .label_name .field_with_errors, .page-container .left-column .section .entry_check .label_container .label_name .field_with_errors, .page-container .left-column .gray_section .entry_full .label_container .label_name .field_with_errors, .page-container .left-column .gray_section .entry_half .label_container .label_name .field_with_errors, .page-container .left-column .gray_section .entry_half_container .label_container .label_name .field_with_errors, .page-container .left-column .gray_section .entry_check .label_container .label_name .field_with_errors, .page-container .left-column .notes_section .entry_full .label_container .label_name .field_with_errors, .page-container .left-column .notes_section .entry_half .label_container .label_name .field_with_errors, .page-container .left-column .notes_section .entry_half_container .label_container .label_name .field_with_errors, .page-container .left-column .notes_section .entry_check .label_container .label_name .field_with_errors {
+  display: inline;
+  width: 100%;
+}
+
+/* line 549, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .label_container .label_name .field_with_errors input, .page-container .left-column .section .entry_half .label_container .label_name .field_with_errors input, .page-container .left-column .section .entry_half_container .label_container .label_name .field_with_errors input, .page-container .left-column .section .entry_check .label_container .label_name .field_with_errors input, .page-container .left-column .gray_section .entry_full .label_container .label_name .field_with_errors input, .page-container .left-column .gray_section .entry_half .label_container .label_name .field_with_errors input, .page-container .left-column .gray_section .entry_half_container .label_container .label_name .field_with_errors input, .page-container .left-column .gray_section .entry_check .label_container .label_name .field_with_errors input, .page-container .left-column .notes_section .entry_full .label_container .label_name .field_with_errors input, .page-container .left-column .notes_section .entry_half .label_container .label_name .field_with_errors input, .page-container .left-column .notes_section .entry_half_container .label_container .label_name .field_with_errors input, .page-container .left-column .notes_section .entry_check .label_container .label_name .field_with_errors input {
+  width: 100%;
+}
+
+/* line 551, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .label_container .label_help, .page-container .left-column .section .entry_half .label_container .label_help, .page-container .left-column .section .entry_half_container .label_container .label_help, .page-container .left-column .section .entry_check .label_container .label_help, .page-container .left-column .gray_section .entry_full .label_container .label_help, .page-container .left-column .gray_section .entry_half .label_container .label_help, .page-container .left-column .gray_section .entry_half_container .label_container .label_help, .page-container .left-column .gray_section .entry_check .label_container .label_help, .page-container .left-column .notes_section .entry_full .label_container .label_help, .page-container .left-column .notes_section .entry_half .label_container .label_help, .page-container .left-column .notes_section .entry_half_container .label_container .label_help, .page-container .left-column .notes_section .entry_check .label_container .label_help {
+  padding: 3px 0px 0px 0px;
+}
+
+/* line 555, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .label_half_container .label_half_name, .page-container .left-column .section .entry_half .label_half_container .label_half_name, .page-container .left-column .section .entry_half_container .label_half_container .label_half_name, .page-container .left-column .section .entry_check .label_half_container .label_half_name, .page-container .left-column .gray_section .entry_full .label_half_container .label_half_name, .page-container .left-column .gray_section .entry_half .label_half_container .label_half_name, .page-container .left-column .gray_section .entry_half_container .label_half_container .label_half_name, .page-container .left-column .gray_section .entry_check .label_half_container .label_half_name, .page-container .left-column .notes_section .entry_full .label_half_container .label_half_name, .page-container .left-column .notes_section .entry_half .label_half_container .label_half_name, .page-container .left-column .notes_section .entry_half_container .label_half_container .label_half_name, .page-container .left-column .notes_section .entry_check .label_half_container .label_half_name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px 6px 0px 0px;
+}
+
+/* line 560, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .help_icon, .page-container .left-column .section .entry_half .help_icon, .page-container .left-column .section .entry_half_container .help_icon, .page-container .left-column .section .entry_check .help_icon, .page-container .left-column .gray_section .entry_full .help_icon, .page-container .left-column .gray_section .entry_half .help_icon, .page-container .left-column .gray_section .entry_half_container .help_icon, .page-container .left-column .gray_section .entry_check .help_icon, .page-container .left-column .notes_section .entry_full .help_icon, .page-container .left-column .notes_section .entry_half .help_icon, .page-container .left-column .notes_section .entry_half_container .help_icon, .page-container .left-column .notes_section .entry_check .help_icon {
+  float: right;
+  width: 14px;
+  height: 14px;
+}
+
+/* line 564, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .helper, .page-container .left-column .section .entry_half .helper, .page-container .left-column .section .entry_half_container .helper, .page-container .left-column .section .entry_check .helper, .page-container .left-column .gray_section .entry_full .helper, .page-container .left-column .gray_section .entry_half .helper, .page-container .left-column .gray_section .entry_half_container .helper, .page-container .left-column .gray_section .entry_check .helper, .page-container .left-column .notes_section .entry_full .helper, .page-container .left-column .notes_section .entry_half .helper, .page-container .left-column .notes_section .entry_half_container .helper, .page-container .left-column .notes_section .entry_check .helper {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  cursor: help;
+}
+
+/* line 569, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .helper_content, .page-container .left-column .section .entry_half .helper_content, .page-container .left-column .section .entry_half_container .helper_content, .page-container .left-column .section .entry_check .helper_content, .page-container .left-column .gray_section .entry_full .helper_content, .page-container .left-column .gray_section .entry_half .helper_content, .page-container .left-column .gray_section .entry_half_container .helper_content, .page-container .left-column .gray_section .entry_check .helper_content, .page-container .left-column .notes_section .entry_full .helper_content, .page-container .left-column .notes_section .entry_half .helper_content, .page-container .left-column .notes_section .entry_half_container .helper_content, .page-container .left-column .notes_section .entry_check .helper_content {
+  position: absolute;
+  top: -10px;
+  right: 9999px;
+  width: 250px;
+  height: 250px;
+  margin: 0px -220px 0px 0px;
+  border-radius: 5px;
+  opacity: 0;
+  z-index: 1000;
+  -webkit-transition: opacity 250ms ease-out;
+  -webkit-transition--moz-transition: opacity 250ms ease-out;
+  -webkit-transition--moz-transition--ms-transition: opacity 250ms ease-out;
+  -webkit-transition--moz-transition--ms-transition--o-transition: opacity 250ms ease-out;
+  -webkit-transition--moz-transition--ms-transition--o-transition-transition: opacity 250ms ease-out;
+}
+
+/* line 585, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .helper_content .helper_content_top, .page-container .left-column .section .entry_half .helper_content .helper_content_top, .page-container .left-column .section .entry_half_container .helper_content .helper_content_top, .page-container .left-column .section .entry_check .helper_content .helper_content_top, .page-container .left-column .gray_section .entry_full .helper_content .helper_content_top, .page-container .left-column .gray_section .entry_half .helper_content .helper_content_top, .page-container .left-column .gray_section .entry_half_container .helper_content .helper_content_top, .page-container .left-column .gray_section .entry_check .helper_content .helper_content_top, .page-container .left-column .notes_section .entry_full .helper_content .helper_content_top, .page-container .left-column .notes_section .entry_half .helper_content .helper_content_top, .page-container .left-column .notes_section .entry_half_container .helper_content .helper_content_top, .page-container .left-column .notes_section .entry_check .helper_content .helper_content_top {
+  background: #667083;
+  padding: 10px 10px 0px 10px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+/* line 589, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .helper_content .helper_content_top .help_coa, .page-container .left-column .section .entry_half .helper_content .helper_content_top .help_coa, .page-container .left-column .section .entry_half_container .helper_content .helper_content_top .help_coa, .page-container .left-column .section .entry_check .helper_content .helper_content_top .help_coa, .page-container .left-column .gray_section .entry_full .helper_content .helper_content_top .help_coa, .page-container .left-column .gray_section .entry_half .helper_content .helper_content_top .help_coa, .page-container .left-column .gray_section .entry_half_container .helper_content .helper_content_top .help_coa, .page-container .left-column .gray_section .entry_check .helper_content .helper_content_top .help_coa, .page-container .left-column .notes_section .entry_full .helper_content .helper_content_top .help_coa, .page-container .left-column .notes_section .entry_half .helper_content .helper_content_top .help_coa, .page-container .left-column .notes_section .entry_half_container .helper_content .helper_content_top .help_coa, .page-container .left-column .notes_section .entry_check .helper_content .helper_content_top .help_coa {
+  width: 100%;
+}
+
+/* line 591, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .helper_content .helper_content_bottom, .page-container .left-column .section .entry_full .helper_content .helper_content_mono, .page-container .left-column .section .entry_half .helper_content .helper_content_bottom, .page-container .left-column .section .entry_half .helper_content .helper_content_mono, .page-container .left-column .section .entry_half_container .helper_content .helper_content_bottom, .page-container .left-column .section .entry_half_container .helper_content .helper_content_mono, .page-container .left-column .section .entry_check .helper_content .helper_content_bottom, .page-container .left-column .section .entry_check .helper_content .helper_content_mono, .page-container .left-column .gray_section .entry_full .helper_content .helper_content_bottom, .page-container .left-column .gray_section .entry_full .helper_content .helper_content_mono, .page-container .left-column .gray_section .entry_half .helper_content .helper_content_bottom, .page-container .left-column .gray_section .entry_half .helper_content .helper_content_mono, .page-container .left-column .gray_section .entry_half_container .helper_content .helper_content_bottom, .page-container .left-column .gray_section .entry_half_container .helper_content .helper_content_mono, .page-container .left-column .gray_section .entry_check .helper_content .helper_content_bottom, .page-container .left-column .gray_section .entry_check .helper_content .helper_content_mono, .page-container .left-column .notes_section .entry_full .helper_content .helper_content_bottom, .page-container .left-column .notes_section .entry_full .helper_content .helper_content_mono, .page-container .left-column .notes_section .entry_half .helper_content .helper_content_bottom, .page-container .left-column .notes_section .entry_half .helper_content .helper_content_mono, .page-container .left-column .notes_section .entry_half_container .helper_content .helper_content_bottom, .page-container .left-column .notes_section .entry_half_container .helper_content .helper_content_mono, .page-container .left-column .notes_section .entry_check .helper_content .helper_content_bottom, .page-container .left-column .notes_section .entry_check .helper_content .helper_content_mono {
+  background: #FFFFFF;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 5px 0px #AAAAAA;
+  -webkit-box-shadow--moz-box-shadow: 0px 0px 5px 0px #AAAAAA;
+  -webkit-box-shadow--moz-box-shadow-box-shadow: 9px #AAAAAA;
+}
+
+/* line 597, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .helper_content .helper_content_bottom a, .page-container .left-column .section .entry_full .helper_content .helper_content_mono a, .page-container .left-column .section .entry_half .helper_content .helper_content_bottom a, .page-container .left-column .section .entry_half .helper_content .helper_content_mono a, .page-container .left-column .section .entry_half_container .helper_content .helper_content_bottom a, .page-container .left-column .section .entry_half_container .helper_content .helper_content_mono a, .page-container .left-column .section .entry_check .helper_content .helper_content_bottom a, .page-container .left-column .section .entry_check .helper_content .helper_content_mono a, .page-container .left-column .gray_section .entry_full .helper_content .helper_content_bottom a, .page-container .left-column .gray_section .entry_full .helper_content .helper_content_mono a, .page-container .left-column .gray_section .entry_half .helper_content .helper_content_bottom a, .page-container .left-column .gray_section .entry_half .helper_content .helper_content_mono a, .page-container .left-column .gray_section .entry_half_container .helper_content .helper_content_bottom a, .page-container .left-column .gray_section .entry_half_container .helper_content .helper_content_mono a, .page-container .left-column .gray_section .entry_check .helper_content .helper_content_bottom a, .page-container .left-column .gray_section .entry_check .helper_content .helper_content_mono a, .page-container .left-column .notes_section .entry_full .helper_content .helper_content_bottom a, .page-container .left-column .notes_section .entry_full .helper_content .helper_content_mono a, .page-container .left-column .notes_section .entry_half .helper_content .helper_content_bottom a, .page-container .left-column .notes_section .entry_half .helper_content .helper_content_mono a, .page-container .left-column .notes_section .entry_half_container .helper_content .helper_content_bottom a, .page-container .left-column .notes_section .entry_half_container .helper_content .helper_content_mono a, .page-container .left-column .notes_section .entry_check .helper_content .helper_content_bottom a, .page-container .left-column .notes_section .entry_check .helper_content .helper_content_mono a {
+  color: #021E5C;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/* line 601, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .helper_content .helper_content_bottom p, .page-container .left-column .section .entry_full .helper_content .helper_content_mono p, .page-container .left-column .section .entry_half .helper_content .helper_content_bottom p, .page-container .left-column .section .entry_half .helper_content .helper_content_mono p, .page-container .left-column .section .entry_half_container .helper_content .helper_content_bottom p, .page-container .left-column .section .entry_half_container .helper_content .helper_content_mono p, .page-container .left-column .section .entry_check .helper_content .helper_content_bottom p, .page-container .left-column .section .entry_check .helper_content .helper_content_mono p, .page-container .left-column .gray_section .entry_full .helper_content .helper_content_bottom p, .page-container .left-column .gray_section .entry_full .helper_content .helper_content_mono p, .page-container .left-column .gray_section .entry_half .helper_content .helper_content_bottom p, .page-container .left-column .gray_section .entry_half .helper_content .helper_content_mono p, .page-container .left-column .gray_section .entry_half_container .helper_content .helper_content_bottom p, .page-container .left-column .gray_section .entry_half_container .helper_content .helper_content_mono p, .page-container .left-column .gray_section .entry_check .helper_content .helper_content_bottom p, .page-container .left-column .gray_section .entry_check .helper_content .helper_content_mono p, .page-container .left-column .notes_section .entry_full .helper_content .helper_content_bottom p, .page-container .left-column .notes_section .entry_full .helper_content .helper_content_mono p, .page-container .left-column .notes_section .entry_half .helper_content .helper_content_bottom p, .page-container .left-column .notes_section .entry_half .helper_content .helper_content_mono p, .page-container .left-column .notes_section .entry_half_container .helper_content .helper_content_bottom p, .page-container .left-column .notes_section .entry_half_container .helper_content .helper_content_mono p, .page-container .left-column .notes_section .entry_check .helper_content .helper_content_bottom p, .page-container .left-column .notes_section .entry_check .helper_content .helper_content_mono p {
+  color: #001032;
+  font-weight: 400;
+}
+
+/* line 604, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .helper_content .helper_content_bottom, .page-container .left-column .section .entry_half .helper_content .helper_content_bottom, .page-container .left-column .section .entry_half_container .helper_content .helper_content_bottom, .page-container .left-column .section .entry_check .helper_content .helper_content_bottom, .page-container .left-column .gray_section .entry_full .helper_content .helper_content_bottom, .page-container .left-column .gray_section .entry_half .helper_content .helper_content_bottom, .page-container .left-column .gray_section .entry_half_container .helper_content .helper_content_bottom, .page-container .left-column .gray_section .entry_check .helper_content .helper_content_bottom, .page-container .left-column .notes_section .entry_full .helper_content .helper_content_bottom, .page-container .left-column .notes_section .entry_half .helper_content .helper_content_bottom, .page-container .left-column .notes_section .entry_half_container .helper_content .helper_content_bottom, .page-container .left-column .notes_section .entry_check .helper_content .helper_content_bottom {
+  border-radius: 0px 0px 5px 5px;
+}
+
+/* line 606, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .helper_content .helper_content_mono, .page-container .left-column .section .entry_half .helper_content .helper_content_mono, .page-container .left-column .section .entry_half_container .helper_content .helper_content_mono, .page-container .left-column .section .entry_check .helper_content .helper_content_mono, .page-container .left-column .gray_section .entry_full .helper_content .helper_content_mono, .page-container .left-column .gray_section .entry_half .helper_content .helper_content_mono, .page-container .left-column .gray_section .entry_half_container .helper_content .helper_content_mono, .page-container .left-column .gray_section .entry_check .helper_content .helper_content_mono, .page-container .left-column .notes_section .entry_full .helper_content .helper_content_mono, .page-container .left-column .notes_section .entry_half .helper_content .helper_content_mono, .page-container .left-column .notes_section .entry_half_container .helper_content .helper_content_mono, .page-container .left-column .notes_section .entry_check .helper_content .helper_content_mono {
+  border-radius: 5px;
+}
+
+/* line 611, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .helper_content_open, .page-container .left-column .section .entry_half .helper_content_open, .page-container .left-column .section .entry_half_container .helper_content_open, .page-container .left-column .section .entry_check .helper_content_open, .page-container .left-column .gray_section .entry_full .helper_content_open, .page-container .left-column .gray_section .entry_half .helper_content_open, .page-container .left-column .gray_section .entry_half_container .helper_content_open, .page-container .left-column .gray_section .entry_check .helper_content_open, .page-container .left-column .notes_section .entry_full .helper_content_open, .page-container .left-column .notes_section .entry_half .helper_content_open, .page-container .left-column .notes_section .entry_half_container .helper_content_open, .page-container .left-column .notes_section .entry_check .helper_content_open {
+  right: -5px;
+  opacity: 1;
+}
+
+/* line 614, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .helper_content_closed, .page-container .left-column .section .entry_half .helper_content_closed, .page-container .left-column .section .entry_half_container .helper_content_closed, .page-container .left-column .section .entry_check .helper_content_closed, .page-container .left-column .gray_section .entry_full .helper_content_closed, .page-container .left-column .gray_section .entry_half .helper_content_closed, .page-container .left-column .gray_section .entry_half_container .helper_content_closed, .page-container .left-column .gray_section .entry_check .helper_content_closed, .page-container .left-column .notes_section .entry_full .helper_content_closed, .page-container .left-column .notes_section .entry_half .helper_content_closed, .page-container .left-column .notes_section .entry_half_container .helper_content_closed, .page-container .left-column .notes_section .entry_check .helper_content_closed {
+  opacity: 0;
+}
+
+/* line 626, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_long_error, .page-container .left-column .section .entry_half .text_long_error, .page-container .left-column .section .entry_half_container .text_long_error, .page-container .left-column .section .entry_check .text_long_error, .page-container .left-column .gray_section .entry_full .text_long_error, .page-container .left-column .gray_section .entry_half .text_long_error, .page-container .left-column .gray_section .entry_half_container .text_long_error, .page-container .left-column .gray_section .entry_check .text_long_error, .page-container .left-column .notes_section .entry_full .text_long_error, .page-container .left-column .notes_section .entry_half .text_long_error, .page-container .left-column .notes_section .entry_half_container .text_long_error, .page-container .left-column .notes_section .entry_check .text_long_error {
+  width: 100%;
+  border: solid 2px #FF3A4F;
+  border-radius: 4px;
+}
+
+/* line 633, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_long_error .text_long, .page-container .left-column .section .entry_half .text_long_error .text_long, .page-container .left-column .section .entry_half_container .text_long_error .text_long, .page-container .left-column .section .entry_check .text_long_error .text_long, .page-container .left-column .gray_section .entry_full .text_long_error .text_long, .page-container .left-column .gray_section .entry_half .text_long_error .text_long, .page-container .left-column .gray_section .entry_half_container .text_long_error .text_long, .page-container .left-column .gray_section .entry_check .text_long_error .text_long, .page-container .left-column .notes_section .entry_full .text_long_error .text_long, .page-container .left-column .notes_section .entry_half .text_long_error .text_long, .page-container .left-column .notes_section .entry_half_container .text_long_error .text_long, .page-container .left-column .notes_section .entry_check .text_long_error .text_long {
+  width: 100%;
+  height: 38px;
+  padding: 0px 0px 0px 12px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: solid 2px #FF3A4F;
+  border-radius: 4px 4px 0px 0px;
+}
+
+/* line 642, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_long_error .text_long:focus, .page-container .left-column .section .entry_half .text_long_error .text_long:focus, .page-container .left-column .section .entry_half_container .text_long_error .text_long:focus, .page-container .left-column .section .entry_check .text_long_error .text_long:focus, .page-container .left-column .gray_section .entry_full .text_long_error .text_long:focus, .page-container .left-column .gray_section .entry_half .text_long_error .text_long:focus, .page-container .left-column .gray_section .entry_half_container .text_long_error .text_long:focus, .page-container .left-column .gray_section .entry_check .text_long_error .text_long:focus, .page-container .left-column .notes_section .entry_full .text_long_error .text_long:focus, .page-container .left-column .notes_section .entry_half .text_long_error .text_long:focus, .page-container .left-column .notes_section .entry_half_container .text_long_error .text_long:focus, .page-container .left-column .notes_section .entry_check .text_long_error .text_long:focus {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: solid 2px #FF3A4F;
+  border-radius: 4px 4px 0px 0px;
+}
+
+/* line 648, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_long_error .expanded, .page-container .left-column .section .entry_half .text_long_error .expanded, .page-container .left-column .section .entry_half_container .text_long_error .expanded, .page-container .left-column .section .entry_check .text_long_error .expanded, .page-container .left-column .gray_section .entry_full .text_long_error .expanded, .page-container .left-column .gray_section .entry_half .text_long_error .expanded, .page-container .left-column .gray_section .entry_half_container .text_long_error .expanded, .page-container .left-column .gray_section .entry_check .text_long_error .expanded, .page-container .left-column .notes_section .entry_full .text_long_error .expanded, .page-container .left-column .notes_section .entry_half .text_long_error .expanded, .page-container .left-column .notes_section .entry_half_container .text_long_error .expanded, .page-container .left-column .notes_section .entry_check .text_long_error .expanded {
+  height: 44px;
+}
+
+/* line 650, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_long_error .error_long, .page-container .left-column .section .entry_half .text_long_error .error_long, .page-container .left-column .section .entry_half_container .text_long_error .error_long, .page-container .left-column .section .entry_check .text_long_error .error_long, .page-container .left-column .gray_section .entry_full .text_long_error .error_long, .page-container .left-column .gray_section .entry_half .text_long_error .error_long, .page-container .left-column .gray_section .entry_half_container .text_long_error .error_long, .page-container .left-column .gray_section .entry_check .text_long_error .error_long, .page-container .left-column .notes_section .entry_full .text_long_error .error_long, .page-container .left-column .notes_section .entry_half .text_long_error .error_long, .page-container .left-column .notes_section .entry_half_container .text_long_error .error_long, .page-container .left-column .notes_section .entry_check .text_long_error .error_long {
+  height: 44px;
+  background-color: #FFF5F6;
+  padding: 14px 0px 0px 12px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* line 655, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_long_error .error_long h1, .page-container .left-column .section .entry_half .text_long_error .error_long h1, .page-container .left-column .section .entry_half_container .text_long_error .error_long h1, .page-container .left-column .section .entry_check .text_long_error .error_long h1, .page-container .left-column .gray_section .entry_full .text_long_error .error_long h1, .page-container .left-column .gray_section .entry_half .text_long_error .error_long h1, .page-container .left-column .gray_section .entry_half_container .text_long_error .error_long h1, .page-container .left-column .gray_section .entry_check .text_long_error .error_long h1, .page-container .left-column .notes_section .entry_full .text_long_error .error_long h1, .page-container .left-column .notes_section .entry_half .text_long_error .error_long h1, .page-container .left-column .notes_section .entry_half_container .text_long_error .error_long h1, .page-container .left-column .notes_section .entry_check .text_long_error .error_long h1 {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 17px;
+  margin: 0px;
+}
+
+/* line 660, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_long_error .error_long_extended, .page-container .left-column .section .entry_half .text_long_error .error_long_extended, .page-container .left-column .section .entry_half_container .text_long_error .error_long_extended, .page-container .left-column .section .entry_check .text_long_error .error_long_extended, .page-container .left-column .gray_section .entry_full .text_long_error .error_long_extended, .page-container .left-column .gray_section .entry_half .text_long_error .error_long_extended, .page-container .left-column .gray_section .entry_half_container .text_long_error .error_long_extended, .page-container .left-column .gray_section .entry_check .text_long_error .error_long_extended, .page-container .left-column .notes_section .entry_full .text_long_error .error_long_extended, .page-container .left-column .notes_section .entry_half .text_long_error .error_long_extended, .page-container .left-column .notes_section .entry_half_container .text_long_error .error_long_extended, .page-container .left-column .notes_section .entry_check .text_long_error .error_long_extended {
+  height: 58px;
+  padding: 14px 12px 14px 12px;
+}
+
+/* line 663, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_long_error .error_border_right, .page-container .left-column .section .entry_half .text_long_error .error_border_right, .page-container .left-column .section .entry_half_container .text_long_error .error_border_right, .page-container .left-column .section .entry_check .text_long_error .error_border_right, .page-container .left-column .gray_section .entry_full .text_long_error .error_border_right, .page-container .left-column .gray_section .entry_half .text_long_error .error_border_right, .page-container .left-column .gray_section .entry_half_container .text_long_error .error_border_right, .page-container .left-column .gray_section .entry_check .text_long_error .error_border_right, .page-container .left-column .notes_section .entry_full .text_long_error .error_border_right, .page-container .left-column .notes_section .entry_half .text_long_error .error_border_right, .page-container .left-column .notes_section .entry_half_container .text_long_error .error_border_right, .page-container .left-column .notes_section .entry_check .text_long_error .error_border_right {
+  border: solid 1px #FF3A4F;
+  border-top: none;
+  border-left: none;
+  border-right: solid 1px #FF3A4F;
+  border-bottom: solid 2px #FF3A4F;
+}
+
+/* line 669, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_long_error .error_border_left, .page-container .left-column .section .entry_half .text_long_error .error_border_left, .page-container .left-column .section .entry_half_container .text_long_error .error_border_left, .page-container .left-column .section .entry_check .text_long_error .error_border_left, .page-container .left-column .gray_section .entry_full .text_long_error .error_border_left, .page-container .left-column .gray_section .entry_half .text_long_error .error_border_left, .page-container .left-column .gray_section .entry_half_container .text_long_error .error_border_left, .page-container .left-column .gray_section .entry_check .text_long_error .error_border_left, .page-container .left-column .notes_section .entry_full .text_long_error .error_border_left, .page-container .left-column .notes_section .entry_half .text_long_error .error_border_left, .page-container .left-column .notes_section .entry_half_container .text_long_error .error_border_left, .page-container .left-column .notes_section .entry_check .text_long_error .error_border_left {
+  border: solid 1px #FF3A4F;
+  border-top: none;
+  border-right: none;
+  border-bottom: solid 2px #FF3A4F;
+  border-radius: 0px 4px 0px 0px;
+}
+
+/* line 675, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_long_error .error_tests, .page-container .left-column .section .entry_half .text_long_error .error_tests, .page-container .left-column .section .entry_half_container .text_long_error .error_tests, .page-container .left-column .section .entry_check .text_long_error .error_tests, .page-container .left-column .gray_section .entry_full .text_long_error .error_tests, .page-container .left-column .gray_section .entry_half .text_long_error .error_tests, .page-container .left-column .gray_section .entry_half_container .text_long_error .error_tests, .page-container .left-column .gray_section .entry_check .text_long_error .error_tests, .page-container .left-column .notes_section .entry_full .text_long_error .error_tests, .page-container .left-column .notes_section .entry_half .text_long_error .error_tests, .page-container .left-column .notes_section .entry_half_container .text_long_error .error_tests, .page-container .left-column .notes_section .entry_check .text_long_error .error_tests {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 2px #FF3A4F;
+  border-radius: 4px 4px 0px 0px;
+}
+
+/* line 681, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .harvest_process_date, .page-container .left-column .section .entry_half .harvest_process_date, .page-container .left-column .section .entry_half_container .harvest_process_date, .page-container .left-column .section .entry_check .harvest_process_date, .page-container .left-column .gray_section .entry_full .harvest_process_date, .page-container .left-column .gray_section .entry_half .harvest_process_date, .page-container .left-column .gray_section .entry_half_container .harvest_process_date, .page-container .left-column .gray_section .entry_check .harvest_process_date, .page-container .left-column .notes_section .entry_full .harvest_process_date, .page-container .left-column .notes_section .entry_half .harvest_process_date, .page-container .left-column .notes_section .entry_half_container .harvest_process_date, .page-container .left-column .notes_section .entry_check .harvest_process_date {
+  cursor: pointer;
+}
+
+/* line 683, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_long, .page-container .left-column .section .entry_half .text_long, .page-container .left-column .section .entry_half_container .text_long, .page-container .left-column .section .entry_check .text_long, .page-container .left-column .gray_section .entry_full .text_long, .page-container .left-column .gray_section .entry_half .text_long, .page-container .left-column .gray_section .entry_half_container .text_long, .page-container .left-column .gray_section .entry_check .text_long, .page-container .left-column .notes_section .entry_full .text_long, .page-container .left-column .notes_section .entry_half .text_long, .page-container .left-column .notes_section .entry_half_container .text_long, .page-container .left-column .notes_section .entry_check .text_long {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: solid 1px #BFC3CB;
+  border-radius: 4px;
+  width: 100%;
+  height: 44px;
+  padding: 0px 0px 0px 12px;
+}
+
+/* line 691, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_long:focus, .page-container .left-column .section .entry_half .text_long:focus, .page-container .left-column .section .entry_half_container .text_long:focus, .page-container .left-column .section .entry_check .text_long:focus, .page-container .left-column .gray_section .entry_full .text_long:focus, .page-container .left-column .gray_section .entry_half .text_long:focus, .page-container .left-column .gray_section .entry_half_container .text_long:focus, .page-container .left-column .gray_section .entry_check .text_long:focus, .page-container .left-column .notes_section .entry_full .text_long:focus, .page-container .left-column .notes_section .entry_half .text_long:focus, .page-container .left-column .notes_section .entry_half_container .text_long:focus, .page-container .left-column .notes_section .entry_check .text_long:focus {
+  border: solid 2px #677082;
+  padding: 0px 0px 0px 11px;
+}
+
+/* line 694, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_short_unit, .page-container .left-column .section .entry_half .text_short_unit, .page-container .left-column .section .entry_half_container .text_short_unit, .page-container .left-column .section .entry_check .text_short_unit, .page-container .left-column .gray_section .entry_full .text_short_unit, .page-container .left-column .gray_section .entry_half .text_short_unit, .page-container .left-column .gray_section .entry_half_container .text_short_unit, .page-container .left-column .gray_section .entry_check .text_short_unit, .page-container .left-column .notes_section .entry_full .text_short_unit, .page-container .left-column .notes_section .entry_half .text_short_unit, .page-container .left-column .notes_section .entry_half_container .text_short_unit, .page-container .left-column .notes_section .entry_check .text_short_unit {
+  border: solid 1px #BFC3CB;
+  border-radius: 4px 0px 0px 4px;
+  width: 70%;
+  height: 44px;
+  padding: 0px 0px 0px 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* line 702, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_short_unit:focus, .page-container .left-column .section .entry_half .text_short_unit:focus, .page-container .left-column .section .entry_half_container .text_short_unit:focus, .page-container .left-column .section .entry_check .text_short_unit:focus, .page-container .left-column .gray_section .entry_full .text_short_unit:focus, .page-container .left-column .gray_section .entry_half .text_short_unit:focus, .page-container .left-column .gray_section .entry_half_container .text_short_unit:focus, .page-container .left-column .gray_section .entry_check .text_short_unit:focus, .page-container .left-column .notes_section .entry_full .text_short_unit:focus, .page-container .left-column .notes_section .entry_half .text_short_unit:focus, .page-container .left-column .notes_section .entry_half_container .text_short_unit:focus, .page-container .left-column .notes_section .entry_check .text_short_unit:focus {
+  border: solid 2px #677082;
+  border-radius: 4px 0px 1px 4px;
+  padding: 0px 0px 0px 11px;
+}
+
+/* line 706, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .select_unit_attached, .page-container .left-column .section .entry_half .select_unit_attached, .page-container .left-column .section .entry_half_container .select_unit_attached, .page-container .left-column .section .entry_check .select_unit_attached, .page-container .left-column .gray_section .entry_full .select_unit_attached, .page-container .left-column .gray_section .entry_half .select_unit_attached, .page-container .left-column .gray_section .entry_half_container .select_unit_attached, .page-container .left-column .gray_section .entry_check .select_unit_attached, .page-container .left-column .notes_section .entry_full .select_unit_attached, .page-container .left-column .notes_section .entry_half .select_unit_attached, .page-container .left-column .notes_section .entry_half_container .select_unit_attached, .page-container .left-column .notes_section .entry_check .select_unit_attached {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #FFFFFF;
+  border: solid 1px #BFC3CB;
+  border-radius: 0px 4px 4px 0px;
+  border-left: none;
+  width: 30%;
+  height: 44px;
+  padding: 0px 0px 0px 12px;
+  background-image: url(/assets/chevron_d-b8f3f3a84db9777aa97c724d3e91ece02210631089134fcae3c3a31de1ed02ee.svg);
+  background-position: calc(100% - 15px) calc(1em + 4px), calc(100% - 10px) calc(1em + 2px), calc(100% - .5em) 0.5em;
+  background-repeat: no-repeat;
+}
+
+/* line 719, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .select_unit_attached:focus, .page-container .left-column .section .entry_half .select_unit_attached:focus, .page-container .left-column .section .entry_half_container .select_unit_attached:focus, .page-container .left-column .section .entry_check .select_unit_attached:focus, .page-container .left-column .gray_section .entry_full .select_unit_attached:focus, .page-container .left-column .gray_section .entry_half .select_unit_attached:focus, .page-container .left-column .gray_section .entry_half_container .select_unit_attached:focus, .page-container .left-column .gray_section .entry_check .select_unit_attached:focus, .page-container .left-column .notes_section .entry_full .select_unit_attached:focus, .page-container .left-column .notes_section .entry_half .select_unit_attached:focus, .page-container .left-column .notes_section .entry_half_container .select_unit_attached:focus, .page-container .left-column .notes_section .entry_check .select_unit_attached:focus {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: solid 2px #677082;
+  border-left: solid 1px #858C9C;
+  padding: 0px 0px 0px 12px;
+}
+
+/* line 725, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .unit_attached, .page-container .left-column .section .entry_half .unit_attached, .page-container .left-column .section .entry_half_container .unit_attached, .page-container .left-column .section .entry_check .unit_attached, .page-container .left-column .gray_section .entry_full .unit_attached, .page-container .left-column .gray_section .entry_half .unit_attached, .page-container .left-column .gray_section .entry_half_container .unit_attached, .page-container .left-column .gray_section .entry_check .unit_attached, .page-container .left-column .notes_section .entry_full .unit_attached, .page-container .left-column .notes_section .entry_half .unit_attached, .page-container .left-column .notes_section .entry_half_container .unit_attached, .page-container .left-column .notes_section .entry_check .unit_attached {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #FFFFFF;
+  border: solid 1px #BFC3CB;
+  border-radius: 0px 4px 4px 0px;
+  border-left: none;
+  width: 30%;
+  height: 44px;
+  padding: 12px 0px 0px 0px;
+  text-align: center;
+}
+
+/* line 736, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_short_unit_error, .page-container .left-column .section .entry_half .text_short_unit_error, .page-container .left-column .section .entry_half_container .text_short_unit_error, .page-container .left-column .section .entry_check .text_short_unit_error, .page-container .left-column .gray_section .entry_full .text_short_unit_error, .page-container .left-column .gray_section .entry_half .text_short_unit_error, .page-container .left-column .gray_section .entry_half_container .text_short_unit_error, .page-container .left-column .gray_section .entry_check .text_short_unit_error, .page-container .left-column .notes_section .entry_full .text_short_unit_error, .page-container .left-column .notes_section .entry_half .text_short_unit_error, .page-container .left-column .notes_section .entry_half_container .text_short_unit_error, .page-container .left-column .notes_section .entry_check .text_short_unit_error {
+  height: 38px;
+  border-top: none;
+  border-left: none;
+  border-right: solid 1px #FF3A4F;
+  border-bottom: solid 2px #FF3A4F;
+  border-radius: 4px 0px 0px 0px;
+}
+
+/* line 743, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_short_unit_error:focus, .page-container .left-column .section .entry_half .text_short_unit_error:focus, .page-container .left-column .section .entry_half_container .text_short_unit_error:focus, .page-container .left-column .section .entry_check .text_short_unit_error:focus, .page-container .left-column .gray_section .entry_full .text_short_unit_error:focus, .page-container .left-column .gray_section .entry_half .text_short_unit_error:focus, .page-container .left-column .gray_section .entry_half_container .text_short_unit_error:focus, .page-container .left-column .gray_section .entry_check .text_short_unit_error:focus, .page-container .left-column .notes_section .entry_full .text_short_unit_error:focus, .page-container .left-column .notes_section .entry_half .text_short_unit_error:focus, .page-container .left-column .notes_section .entry_half_container .text_short_unit_error:focus, .page-container .left-column .notes_section .entry_check .text_short_unit_error:focus {
+  border-top: none;
+  border-left: none;
+  border-right: solid 1px #FF3A4F;
+  border-bottom: solid 2px #FF3A4F;
+  border-radius: 4px 0px 0px 0px;
+  padding: 0px 0px 0px 12px;
+}
+
+/* line 750, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .select_unit_attached_error, .page-container .left-column .section .entry_half .select_unit_attached_error, .page-container .left-column .section .entry_half_container .select_unit_attached_error, .page-container .left-column .section .entry_check .select_unit_attached_error, .page-container .left-column .gray_section .entry_full .select_unit_attached_error, .page-container .left-column .gray_section .entry_half .select_unit_attached_error, .page-container .left-column .gray_section .entry_half_container .select_unit_attached_error, .page-container .left-column .gray_section .entry_check .select_unit_attached_error, .page-container .left-column .notes_section .entry_full .select_unit_attached_error, .page-container .left-column .notes_section .entry_half .select_unit_attached_error, .page-container .left-column .notes_section .entry_half_container .select_unit_attached_error, .page-container .left-column .notes_section .entry_check .select_unit_attached_error {
+  height: 38px;
+}
+
+/* line 752, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .select_unit_attached_error:focus, .page-container .left-column .section .entry_half .select_unit_attached_error:focus, .page-container .left-column .section .entry_half_container .select_unit_attached_error:focus, .page-container .left-column .section .entry_check .select_unit_attached_error:focus, .page-container .left-column .gray_section .entry_full .select_unit_attached_error:focus, .page-container .left-column .gray_section .entry_half .select_unit_attached_error:focus, .page-container .left-column .gray_section .entry_half_container .select_unit_attached_error:focus, .page-container .left-column .gray_section .entry_check .select_unit_attached_error:focus, .page-container .left-column .notes_section .entry_full .select_unit_attached_error:focus, .page-container .left-column .notes_section .entry_half .select_unit_attached_error:focus, .page-container .left-column .notes_section .entry_half_container .select_unit_attached_error:focus, .page-container .left-column .notes_section .entry_check .select_unit_attached_error:focus {
+  border: solid 1px #FF3A4F;
+  border-top: none;
+  border-right: none;
+  border-bottom: solid 2px #FF3A4F;
+  border-radius: 0px 5px 0px 0px;
+  padding: 0px 0px 0px 12px;
+}
+
+/* line 759, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_small, .page-container .left-column .section .entry_half .text_small, .page-container .left-column .section .entry_half_container .text_small, .page-container .left-column .section .entry_check .text_small, .page-container .left-column .gray_section .entry_full .text_small, .page-container .left-column .gray_section .entry_half .text_small, .page-container .left-column .gray_section .entry_half_container .text_small, .page-container .left-column .gray_section .entry_check .text_small, .page-container .left-column .notes_section .entry_full .text_small, .page-container .left-column .notes_section .entry_half .text_small, .page-container .left-column .notes_section .entry_half_container .text_small, .page-container .left-column .notes_section .entry_check .text_small {
+  width: 83%;
+}
+
+/* line 761, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .unit_small, .page-container .left-column .section .entry_half .unit_small, .page-container .left-column .section .entry_half_container .unit_small, .page-container .left-column .section .entry_check .unit_small, .page-container .left-column .gray_section .entry_full .unit_small, .page-container .left-column .gray_section .entry_half .unit_small, .page-container .left-column .gray_section .entry_half_container .unit_small, .page-container .left-column .gray_section .entry_check .unit_small, .page-container .left-column .notes_section .entry_full .unit_small, .page-container .left-column .notes_section .entry_half .unit_small, .page-container .left-column .notes_section .entry_half_container .unit_small, .page-container .left-column .notes_section .entry_check .unit_small {
+  width: 17%;
+}
+
+/* line 763, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_medium, .page-container .left-column .section .entry_half .text_medium, .page-container .left-column .section .entry_half_container .text_medium, .page-container .left-column .section .entry_check .text_medium, .page-container .left-column .gray_section .entry_full .text_medium, .page-container .left-column .gray_section .entry_half .text_medium, .page-container .left-column .gray_section .entry_half_container .text_medium, .page-container .left-column .gray_section .entry_check .text_medium, .page-container .left-column .notes_section .entry_full .text_medium, .page-container .left-column .notes_section .entry_half .text_medium, .page-container .left-column .notes_section .entry_half_container .text_medium, .page-container .left-column .notes_section .entry_check .text_medium {
+  width: 75%;
+}
+
+/* line 765, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .unit_medium, .page-container .left-column .section .entry_half .unit_medium, .page-container .left-column .section .entry_half_container .unit_medium, .page-container .left-column .section .entry_check .unit_medium, .page-container .left-column .gray_section .entry_full .unit_medium, .page-container .left-column .gray_section .entry_half .unit_medium, .page-container .left-column .gray_section .entry_half_container .unit_medium, .page-container .left-column .gray_section .entry_check .unit_medium, .page-container .left-column .notes_section .entry_full .unit_medium, .page-container .left-column .notes_section .entry_half .unit_medium, .page-container .left-column .notes_section .entry_half_container .unit_medium, .page-container .left-column .notes_section .entry_check .unit_medium {
+  width: 25%;
+}
+
+/* line 767, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_large, .page-container .left-column .section .entry_half .text_large, .page-container .left-column .section .entry_half_container .text_large, .page-container .left-column .section .entry_check .text_large, .page-container .left-column .gray_section .entry_full .text_large, .page-container .left-column .gray_section .entry_half .text_large, .page-container .left-column .gray_section .entry_half_container .text_large, .page-container .left-column .gray_section .entry_check .text_large, .page-container .left-column .notes_section .entry_full .text_large, .page-container .left-column .notes_section .entry_half .text_large, .page-container .left-column .notes_section .entry_half_container .text_large, .page-container .left-column .notes_section .entry_check .text_large {
+  width: 58%;
+}
+
+/* line 769, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .unit_large, .page-container .left-column .section .entry_half .unit_large, .page-container .left-column .section .entry_half_container .unit_large, .page-container .left-column .section .entry_check .unit_large, .page-container .left-column .gray_section .entry_full .unit_large, .page-container .left-column .gray_section .entry_half .unit_large, .page-container .left-column .gray_section .entry_half_container .unit_large, .page-container .left-column .gray_section .entry_check .unit_large, .page-container .left-column .notes_section .entry_full .unit_large, .page-container .left-column .notes_section .entry_half .unit_large, .page-container .left-column .notes_section .entry_half_container .unit_large, .page-container .left-column .notes_section .entry_check .unit_large {
+  width: 42%;
+}
+
+/* line 771, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_extra_large, .page-container .left-column .section .entry_half .text_extra_large, .page-container .left-column .section .entry_half_container .text_extra_large, .page-container .left-column .section .entry_check .text_extra_large, .page-container .left-column .gray_section .entry_full .text_extra_large, .page-container .left-column .gray_section .entry_half .text_extra_large, .page-container .left-column .gray_section .entry_half_container .text_extra_large, .page-container .left-column .gray_section .entry_check .text_extra_large, .page-container .left-column .notes_section .entry_full .text_extra_large, .page-container .left-column .notes_section .entry_half .text_extra_large, .page-container .left-column .notes_section .entry_half_container .text_extra_large, .page-container .left-column .notes_section .entry_check .text_extra_large {
+  width: 68%;
+}
+
+/* line 773, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .unit_extra_large, .page-container .left-column .section .entry_half .unit_extra_large, .page-container .left-column .section .entry_half_container .unit_extra_large, .page-container .left-column .section .entry_check .unit_extra_large, .page-container .left-column .gray_section .entry_full .unit_extra_large, .page-container .left-column .gray_section .entry_half .unit_extra_large, .page-container .left-column .gray_section .entry_half_container .unit_extra_large, .page-container .left-column .gray_section .entry_check .unit_extra_large, .page-container .left-column .notes_section .entry_full .unit_extra_large, .page-container .left-column .notes_section .entry_half .unit_extra_large, .page-container .left-column .notes_section .entry_half_container .unit_extra_large, .page-container .left-column .notes_section .entry_check .unit_extra_large {
+  width: 32%;
+}
+
+/* line 775, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_huge, .page-container .left-column .section .entry_half .text_huge, .page-container .left-column .section .entry_half_container .text_huge, .page-container .left-column .section .entry_check .text_huge, .page-container .left-column .gray_section .entry_full .text_huge, .page-container .left-column .gray_section .entry_half .text_huge, .page-container .left-column .gray_section .entry_half_container .text_huge, .page-container .left-column .gray_section .entry_check .text_huge, .page-container .left-column .notes_section .entry_full .text_huge, .page-container .left-column .notes_section .entry_half .text_huge, .page-container .left-column .notes_section .entry_half_container .text_huge, .page-container .left-column .notes_section .entry_check .text_huge {
+  width: 47%;
+}
+
+/* line 777, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .unit_huge, .page-container .left-column .section .entry_half .unit_huge, .page-container .left-column .section .entry_half_container .unit_huge, .page-container .left-column .section .entry_check .unit_huge, .page-container .left-column .gray_section .entry_full .unit_huge, .page-container .left-column .gray_section .entry_half .unit_huge, .page-container .left-column .gray_section .entry_half_container .unit_huge, .page-container .left-column .gray_section .entry_check .unit_huge, .page-container .left-column .notes_section .entry_full .unit_huge, .page-container .left-column .notes_section .entry_half .unit_huge, .page-container .left-column .notes_section .entry_half_container .unit_huge, .page-container .left-column .notes_section .entry_check .unit_huge {
+  width: 53%;
+}
+
+/* line 779, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_small_error, .page-container .left-column .section .entry_half .text_small_error, .page-container .left-column .section .entry_half_container .text_small_error, .page-container .left-column .section .entry_check .text_small_error, .page-container .left-column .gray_section .entry_full .text_small_error, .page-container .left-column .gray_section .entry_half .text_small_error, .page-container .left-column .gray_section .entry_half_container .text_small_error, .page-container .left-column .gray_section .entry_check .text_small_error, .page-container .left-column .notes_section .entry_full .text_small_error, .page-container .left-column .notes_section .entry_half .text_small_error, .page-container .left-column .notes_section .entry_half_container .text_small_error, .page-container .left-column .notes_section .entry_check .text_small_error {
+  width: 82%;
+}
+
+/* line 781, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .unit_small_error, .page-container .left-column .section .entry_half .unit_small_error, .page-container .left-column .section .entry_half_container .unit_small_error, .page-container .left-column .section .entry_check .unit_small_error, .page-container .left-column .gray_section .entry_full .unit_small_error, .page-container .left-column .gray_section .entry_half .unit_small_error, .page-container .left-column .gray_section .entry_half_container .unit_small_error, .page-container .left-column .gray_section .entry_check .unit_small_error, .page-container .left-column .notes_section .entry_full .unit_small_error, .page-container .left-column .notes_section .entry_half .unit_small_error, .page-container .left-column .notes_section .entry_half_container .unit_small_error, .page-container .left-column .notes_section .entry_check .unit_small_error {
+  width: 18%;
+  min-width: 75px;
+}
+
+/* line 784, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_large_error, .page-container .left-column .section .entry_half .text_large_error, .page-container .left-column .section .entry_half_container .text_large_error, .page-container .left-column .section .entry_check .text_large_error, .page-container .left-column .gray_section .entry_full .text_large_error, .page-container .left-column .gray_section .entry_half .text_large_error, .page-container .left-column .gray_section .entry_half_container .text_large_error, .page-container .left-column .gray_section .entry_check .text_large_error, .page-container .left-column .notes_section .entry_full .text_large_error, .page-container .left-column .notes_section .entry_half .text_large_error, .page-container .left-column .notes_section .entry_half_container .text_large_error, .page-container .left-column .notes_section .entry_check .text_large_error {
+  width: 60%;
+}
+
+/* line 786, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .unit_large_error, .page-container .left-column .section .entry_half .unit_large_error, .page-container .left-column .section .entry_half_container .unit_large_error, .page-container .left-column .section .entry_check .unit_large_error, .page-container .left-column .gray_section .entry_full .unit_large_error, .page-container .left-column .gray_section .entry_half .unit_large_error, .page-container .left-column .gray_section .entry_half_container .unit_large_error, .page-container .left-column .gray_section .entry_check .unit_large_error, .page-container .left-column .notes_section .entry_full .unit_large_error, .page-container .left-column .notes_section .entry_half .unit_large_error, .page-container .left-column .notes_section .entry_half_container .unit_large_error, .page-container .left-column .notes_section .entry_check .unit_large_error {
+  width: 40%;
+  min-width: 108px;
+}
+
+/* line 789, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_extra_large_error, .page-container .left-column .section .entry_half .text_extra_large_error, .page-container .left-column .section .entry_half_container .text_extra_large_error, .page-container .left-column .section .entry_check .text_extra_large_error, .page-container .left-column .gray_section .entry_full .text_extra_large_error, .page-container .left-column .gray_section .entry_half .text_extra_large_error, .page-container .left-column .gray_section .entry_half_container .text_extra_large_error, .page-container .left-column .gray_section .entry_check .text_extra_large_error, .page-container .left-column .notes_section .entry_full .text_extra_large_error, .page-container .left-column .notes_section .entry_half .text_extra_large_error, .page-container .left-column .notes_section .entry_half_container .text_extra_large_error, .page-container .left-column .notes_section .entry_check .text_extra_large_error {
+  width: 68%;
+}
+
+/* line 791, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .unit_extra_large_error, .page-container .left-column .section .entry_half .unit_extra_large_error, .page-container .left-column .section .entry_half_container .unit_extra_large_error, .page-container .left-column .section .entry_check .unit_extra_large_error, .page-container .left-column .gray_section .entry_full .unit_extra_large_error, .page-container .left-column .gray_section .entry_half .unit_extra_large_error, .page-container .left-column .gray_section .entry_half_container .unit_extra_large_error, .page-container .left-column .gray_section .entry_check .unit_extra_large_error, .page-container .left-column .notes_section .entry_full .unit_extra_large_error, .page-container .left-column .notes_section .entry_half .unit_extra_large_error, .page-container .left-column .notes_section .entry_half_container .unit_extra_large_error, .page-container .left-column .notes_section .entry_check .unit_extra_large_error {
+  width: 32%;
+  min-width: 108px;
+}
+
+/* line 794, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .text_full, .page-container .left-column .section .entry_half .text_full, .page-container .left-column .section .entry_half_container .text_full, .page-container .left-column .section .entry_check .text_full, .page-container .left-column .gray_section .entry_full .text_full, .page-container .left-column .gray_section .entry_half .text_full, .page-container .left-column .gray_section .entry_half_container .text_full, .page-container .left-column .gray_section .entry_check .text_full, .page-container .left-column .notes_section .entry_full .text_full, .page-container .left-column .notes_section .entry_half .text_full, .page-container .left-column .notes_section .entry_half_container .text_full, .page-container .left-column .notes_section .entry_check .text_full {
+  width: 100%;
+}
+
+/* line 796, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .select_long, .page-container .left-column .section .entry_half .select_long, .page-container .left-column .section .entry_half_container .select_long, .page-container .left-column .section .entry_check .select_long, .page-container .left-column .gray_section .entry_full .select_long, .page-container .left-column .gray_section .entry_half .select_long, .page-container .left-column .gray_section .entry_half_container .select_long, .page-container .left-column .gray_section .entry_check .select_long, .page-container .left-column .notes_section .entry_full .select_long, .page-container .left-column .notes_section .entry_half .select_long, .page-container .left-column .notes_section .entry_half_container .select_long, .page-container .left-column .notes_section .entry_check .select_long {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #FFFFFF;
+  border: solid 1px #BFC3CB;
+  border-radius: 4px;
+  width: 100%;
+  height: 44px;
+  padding: 0px 0px 0px 12px;
+  background-image: url(/assets/chevron_d-b8f3f3a84db9777aa97c724d3e91ece02210631089134fcae3c3a31de1ed02ee.svg);
+  background-position: calc(100% - 15px) calc(1em + 4px), calc(100% - 10px) calc(1em + 2px), calc(100% - .5em) 0.5em;
+  background-repeat: no-repeat;
+}
+
+/* line 808, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .select_long:focus, .page-container .left-column .section .entry_half .select_long:focus, .page-container .left-column .section .entry_half_container .select_long:focus, .page-container .left-column .section .entry_check .select_long:focus, .page-container .left-column .gray_section .entry_full .select_long:focus, .page-container .left-column .gray_section .entry_half .select_long:focus, .page-container .left-column .gray_section .entry_half_container .select_long:focus, .page-container .left-column .gray_section .entry_check .select_long:focus, .page-container .left-column .notes_section .entry_full .select_long:focus, .page-container .left-column .notes_section .entry_half .select_long:focus, .page-container .left-column .notes_section .entry_half_container .select_long:focus, .page-container .left-column .notes_section .entry_check .select_long:focus {
+  border: solid 2px #677082;
+}
+
+/* line 810, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .select_error:focus, .page-container .left-column .section .entry_half .select_error:focus, .page-container .left-column .section .entry_half_container .select_error:focus, .page-container .left-column .section .entry_check .select_error:focus, .page-container .left-column .gray_section .entry_full .select_error:focus, .page-container .left-column .gray_section .entry_half .select_error:focus, .page-container .left-column .gray_section .entry_half_container .select_error:focus, .page-container .left-column .gray_section .entry_check .select_error:focus, .page-container .left-column .notes_section .entry_full .select_error:focus, .page-container .left-column .notes_section .entry_half .select_error:focus, .page-container .left-column .notes_section .entry_half_container .select_error:focus, .page-container .left-column .notes_section .entry_check .select_error:focus {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: solid 2px #FF3A4F;
+  border-radius: 4px 4px 0px 0px;
+  padding: 0px 0px 0px 11px;
+}
+
+/* line 817, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .select_short, .page-container .left-column .section .entry_half .select_short, .page-container .left-column .section .entry_half_container .select_short, .page-container .left-column .section .entry_check .select_short, .page-container .left-column .gray_section .entry_full .select_short, .page-container .left-column .gray_section .entry_half .select_short, .page-container .left-column .gray_section .entry_half_container .select_short, .page-container .left-column .gray_section .entry_check .select_short, .page-container .left-column .notes_section .entry_full .select_short, .page-container .left-column .notes_section .entry_half .select_short, .page-container .left-column .notes_section .entry_half_container .select_short, .page-container .left-column .notes_section .entry_check .select_short {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #FFFFFF;
+  border: solid 1px #BFC3CB;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 226px;
+  height: 44px;
+  padding: 0px 0px 0px 12px;
+  background-image: url(/assets/chevron_d-b8f3f3a84db9777aa97c724d3e91ece02210631089134fcae3c3a31de1ed02ee.svg);
+  background-position: calc(100% - 15px) calc(1em + 4px), calc(100% - 10px) calc(1em + 2px), calc(100% - .5em) 0.5em;
+  background-repeat: no-repeat;
+}
+
+/* line 830, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .select_short:focus, .page-container .left-column .section .entry_half .select_short:focus, .page-container .left-column .section .entry_half_container .select_short:focus, .page-container .left-column .section .entry_check .select_short:focus, .page-container .left-column .gray_section .entry_full .select_short:focus, .page-container .left-column .gray_section .entry_half .select_short:focus, .page-container .left-column .gray_section .entry_half_container .select_short:focus, .page-container .left-column .gray_section .entry_check .select_short:focus, .page-container .left-column .notes_section .entry_full .select_short:focus, .page-container .left-column .notes_section .entry_half .select_short:focus, .page-container .left-column .notes_section .entry_half_container .select_short:focus, .page-container .left-column .notes_section .entry_check .select_short:focus {
+  border: solid 2px #677082;
+  padding: 0px 0px 0px 11px;
+}
+
+/* line 833, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .select_error, .page-container .left-column .section .entry_half .select_error, .page-container .left-column .section .entry_half_container .select_error, .page-container .left-column .section .entry_check .select_error, .page-container .left-column .gray_section .entry_full .select_error, .page-container .left-column .gray_section .entry_half .select_error, .page-container .left-column .gray_section .entry_half_container .select_error, .page-container .left-column .gray_section .entry_check .select_error, .page-container .left-column .notes_section .entry_full .select_error, .page-container .left-column .notes_section .entry_half .select_error, .page-container .left-column .notes_section .entry_half_container .select_error, .page-container .left-column .notes_section .entry_check .select_error {
+  height: 38px;
+  border: solid 1px #FF3A4F;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: solid 2px #FF3A4F;
+  border-radius: 4px 4px 0px 0px;
+}
+
+/* line 841, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .select_error:focus, .page-container .left-column .section .entry_half .select_error:focus, .page-container .left-column .section .entry_half_container .select_error:focus, .page-container .left-column .section .entry_check .select_error:focus, .page-container .left-column .gray_section .entry_full .select_error:focus, .page-container .left-column .gray_section .entry_half .select_error:focus, .page-container .left-column .gray_section .entry_half_container .select_error:focus, .page-container .left-column .gray_section .entry_check .select_error:focus, .page-container .left-column .notes_section .entry_full .select_error:focus, .page-container .left-column .notes_section .entry_half .select_error:focus, .page-container .left-column .notes_section .entry_half_container .select_error:focus, .page-container .left-column .notes_section .entry_check .select_error:focus {
+  height: 38px;
+  border: solid 1px #FF3A4F;
+  border-top: none;
+  border-right: none;
+  border-left: solid 1px #FF3A4F;
+  border-bottom: solid 2px #FF3A4F;
+  border-radius: 4px 4px 0px 0px;
+  padding: 0px 0px 0px 11px;
+}
+
+/* line 851, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .row .field_with_errors, .page-container .left-column .section .entry_half .row .field_with_errors, .page-container .left-column .section .entry_half_container .row .field_with_errors, .page-container .left-column .section .entry_check .row .field_with_errors, .page-container .left-column .gray_section .entry_full .row .field_with_errors, .page-container .left-column .gray_section .entry_half .row .field_with_errors, .page-container .left-column .gray_section .entry_half_container .row .field_with_errors, .page-container .left-column .gray_section .entry_check .row .field_with_errors, .page-container .left-column .notes_section .entry_full .row .field_with_errors, .page-container .left-column .notes_section .entry_half .row .field_with_errors, .page-container .left-column .notes_section .entry_half_container .row .field_with_errors, .page-container .left-column .notes_section .entry_check .row .field_with_errors {
+  display: inline;
+  width: 100%;
+}
+
+/* line 854, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_full .row .field_with_errors input, .page-container .left-column .section .entry_half .row .field_with_errors input, .page-container .left-column .section .entry_half_container .row .field_with_errors input, .page-container .left-column .section .entry_check .row .field_with_errors input, .page-container .left-column .gray_section .entry_full .row .field_with_errors input, .page-container .left-column .gray_section .entry_half .row .field_with_errors input, .page-container .left-column .gray_section .entry_half_container .row .field_with_errors input, .page-container .left-column .gray_section .entry_check .row .field_with_errors input, .page-container .left-column .notes_section .entry_full .row .field_with_errors input, .page-container .left-column .notes_section .entry_half .row .field_with_errors input, .page-container .left-column .notes_section .entry_half_container .row .field_with_errors input, .page-container .left-column .notes_section .entry_check .row .field_with_errors input {
+  width: 100%;
+}
+
+/* line 856, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_confirmation, .page-container .left-column .gray_section .entry_confirmation, .page-container .left-column .notes_section .entry_confirmation {
+  width: 100%;
+  padding: 0px 0px 40px 0px;
+}
+
+/* line 860, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_confirmation .attribute_row, .page-container .left-column .gray_section .entry_confirmation .attribute_row, .page-container .left-column .notes_section .entry_confirmation .attribute_row {
+  min-height: 28px;
+  width: 100%;
+  background-color: transparent;
+  border: solid 1px #E0E2E6;
+  border-radius: 1px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding: 10px 0px 8px 8px;
+}
+
+/* line 871, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_confirmation .attribute_row .attribute_label, .page-container .left-column .gray_section .entry_confirmation .attribute_row .attribute_label, .page-container .left-column .notes_section .entry_confirmation .attribute_row .attribute_label {
+  width: 207px;
+  padding: 0px 13px 0px 0px;
+}
+
+/* line 874, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_confirmation .attribute_row .attribute_label h5, .page-container .left-column .gray_section .entry_confirmation .attribute_row .attribute_label h5, .page-container .left-column .notes_section .entry_confirmation .attribute_row .attribute_label h5 {
+  font-weight: 500;
+}
+
+/* line 876, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_confirmation .attribute_row .attribute_label_tests, .page-container .left-column .gray_section .entry_confirmation .attribute_row .attribute_label_tests, .page-container .left-column .notes_section .entry_confirmation .attribute_row .attribute_label_tests {
+  padding-top: 2px;
+}
+
+/* line 878, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_confirmation .attribute_row .attribute, .page-container .left-column .gray_section .entry_confirmation .attribute_row .attribute, .page-container .left-column .notes_section .entry_confirmation .attribute_row .attribute {
+  max-width: 278px;
+  overflow-wrap: break-word;
+}
+
+/* line 881, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_confirmation .attribute_row .attribute_padding, .page-container .left-column .gray_section .entry_confirmation .attribute_row .attribute_padding, .page-container .left-column .notes_section .entry_confirmation .attribute_row .attribute_padding {
+  padding-top: 10px;
+}
+
+/* line 885, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_confirmation .attribute_row .attribute_tests .attribute_test, .page-container .left-column .gray_section .entry_confirmation .attribute_row .attribute_tests .attribute_test, .page-container .left-column .notes_section .entry_confirmation .attribute_row .attribute_tests .attribute_test {
+  padding-top: 2px;
+}
+
+/* line 887, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_confirmation .attribute_row_tests, .page-container .left-column .gray_section .entry_confirmation .attribute_row_tests, .page-container .left-column .notes_section .entry_confirmation .attribute_row_tests {
+  padding-top: 8px;
+}
+
+/* line 889, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_confirmation .attribute_row_reduced, .page-container .left-column .gray_section .entry_confirmation .attribute_row_reduced, .page-container .left-column .notes_section .entry_confirmation .attribute_row_reduced {
+  padding-bottom: 0px;
+}
+
+/* line 891, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .entry_confirmation .second_row, .page-container .left-column .gray_section .entry_confirmation .second_row, .page-container .left-column .notes_section .entry_confirmation .second_row {
+  border-top: none;
+  padding-top: 0px;
+}
+
+/* line 894, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .batch_header, .page-container .left-column .gray_section .batch_header, .page-container .left-column .notes_section .batch_header {
+  justify-content: space-between;
+  max-width: 500px;
+  height: 108px;
+}
+
+/* line 899, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .batch_header a, .page-container .left-column .gray_section .batch_header a, .page-container .left-column .notes_section .batch_header a {
+  text-decoration: none;
+  color: #FF3A4F;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* line 904, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .batch_header_adjusted, .page-container .left-column .gray_section .batch_header_adjusted, .page-container .left-column .notes_section .batch_header_adjusted {
+  height: 83px;
+}
+
+/* line 906, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .section_header_icon, .page-container .left-column .gray_section .section_header_icon, .page-container .left-column .notes_section .section_header_icon {
+  padding-bottom: 20px;
+}
+
+/* line 909, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .section_header_icon .icon, .page-container .left-column .gray_section .section_header_icon .icon, .page-container .left-column .notes_section .section_header_icon .icon {
+  padding: 20px 0px 0px 0px;
+}
+
+/* line 911, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .section_header_icon .remove_icon, .page-container .left-column .gray_section .section_header_icon .remove_icon, .page-container .left-column .notes_section .section_header_icon .remove_icon {
+  padding: 25px 4px 0px 0px;
+}
+
+/* line 913, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .section_header_icon .header_button_text, .page-container .left-column .gray_section .section_header_icon .header_button_text, .page-container .left-column .notes_section .section_header_icon .header_button_text {
+  padding: 23px 0px 0px 0px;
+}
+
+/* line 915, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .section_header_top, .page-container .left-column .gray_section .section_header_top, .page-container .left-column .notes_section .section_header_top {
+  height: 53px;
+  padding: 0px 0px 0px 0px;
+}
+
+/* line 918, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .section_header_reduced, .page-container .left-column .gray_section .section_header_reduced, .page-container .left-column .notes_section .section_header_reduced {
+  height: 95px;
+  padding: 40px 0px 0px 0px;
+}
+
+/* line 921, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .padless, .page-container .left-column .gray_section .padless, .page-container .left-column .notes_section .padless {
+  padding: 0px 0px 0px 0px;
+}
+
+/* line 923, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .padless_bottom, .page-container .left-column .gray_section .padless_bottom, .page-container .left-column .notes_section .padless_bottom {
+  padding-bottom: 0px;
+}
+
+/* line 925, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .minimal_height, .page-container .left-column .gray_section .minimal_height, .page-container .left-column .notes_section .minimal_height {
+  min-height: 44px;
+}
+
+/* line 927, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .section .unbound, .page-container .left-column .gray_section .unbound, .page-container .left-column .notes_section .unbound {
+  padding: 0px 0px 25px 0px;
+}
+
+/* line 929, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .nl {
+  display: inline;
+}
+
+/* line 931, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .nlb {
+  display: inline-block;
+}
+
+/* line 933, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .post_field_text {
+  margin-top: 10px;
+}
+
+/* line 935, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .example_text {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #667084;
+}
+
+/* line 939, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .error_text {
+  margin-top: 10px;
+  color: #FF3A4F;
+}
+
+/* line 942, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .nested-fields {
+  padding-top: 40px;
+  border-color: #E0E2E6;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+/* line 947, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .field_container {
+  width: 100%;
+}
+
+/* line 950, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .field_container_error {
+  width: 100%;
+}
+
+/* line 953, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .field_container_error .field_with_errors {
+  display: inline;
+  width: 80%;
+}
+
+/* line 956, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .field_container_error .field_with_errors input {
+  width: 100%;
+}
+
+/* line 958, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .bottomless {
+  margin-bottom: 0px;
+}
+
+/* line 960, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .reduced_bottom {
+  margin-bottom: 20px;
+}
+
+/* line 962, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .marginless {
+  margin: 0px 0px 0px 0px;
+}
+
+/* line 964, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .lh20 {
+  line-height: 20px;
+}
+
+/* line 966, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .padless_bottom {
+  padding-bottom: 0px;
+}
+
+/* line 968, app/assets/stylesheets/sample_request.sass */
+.page-container .left-column .forty_padding_top {
+  padding-top: 40px;
+}
+
+/* line 970, app/assets/stylesheets/sample_request.sass */
+.page-container .right-illustration-column {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #021E5C;
+}
+
+/* line 980, app/assets/stylesheets/sample_request.sass */
+.page-container .right-illustration-column .beakers {
+  display: block;
+  margin: 0 auto;
+  position: fixed;
+  width: 18%;
+  top: 30%;
+}
+
+@media (max-width: 1130px) {
+  /* line 1003, app/assets/stylesheets/sample_request.sass */
+  .page-container .right-illustration-column .beakers {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 1008, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column {
+    width: 100%;
+    min-width: 50px;
+  }
+  /* line 1011, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section {
+    margin-right: auto;
+  }
+  /* line 1013, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .sample_request {
+    margin-right: auto;
+  }
+  /* line 1018, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_full .helper .helper_content, .page-container .left-column .section .entry_half .helper .helper_content, .page-container .left-column .gray_section .entry_full .helper .helper_content, .page-container .left-column .gray_section .entry_half .helper .helper_content, .page-container .left-column .notes_section .entry_full .helper .helper_content, .page-container .left-column .notes_section .entry_half .helper .helper_content {
+    margin: 0px 30px 0px 0px;
+  }
+  /* line 1020, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_full .helper .inverse, .page-container .left-column .section .entry_half .helper .inverse, .page-container .left-column .gray_section .entry_full .helper .inverse, .page-container .left-column .gray_section .entry_half .helper .inverse, .page-container .left-column .notes_section .entry_full .helper .inverse, .page-container .left-column .notes_section .entry_half .helper .inverse {
+    margin: -170px -240px 0px 0px;
+  }
+  /* line 1022, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_full .helper .control_study, .page-container .left-column .section .entry_half .helper .control_study, .page-container .left-column .gray_section .entry_full .helper .control_study, .page-container .left-column .gray_section .entry_half .helper .control_study, .page-container .left-column .notes_section .entry_full .helper .control_study, .page-container .left-column .notes_section .entry_half .helper .control_study {
+    margin: 40px -125px 0px 0px;
+  }
+  /* line 1024, app/assets/stylesheets/sample_request.sass */
+  .page-container .right-illustration-column {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 1029, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  /* line 1034, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .sample_request .form_header h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  /* line 1038, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_half {
+    flex-direction: column;
+    min-height: 69px;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+  }
+  /* line 1043, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_half .half_entry_left, .page-container .left-column .section .entry_half .half_entry_left_labeled {
+    width: 100%;
+    padding: 0px 0px 25px 0px;
+  }
+  /* line 1046, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_half .half_entry_right, .page-container .left-column .section .entry_half .half_entry_right_labeled {
+    width: 100%;
+    padding: 0px 0px 25px 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1055, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_full .text_small, .page-container .left-column .section .entry_half .text_small, .page-container .left-column .gray_section .entry_full .text_small, .page-container .left-column .gray_section .entry_half .text_small {
+    width: 85%;
+  }
+  /* line 1057, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_full .unit_small, .page-container .left-column .section .entry_half .unit_small, .page-container .left-column .gray_section .entry_full .unit_small, .page-container .left-column .gray_section .entry_half .unit_small {
+    width: 15%;
+    min-width: 82px;
+  }
+  /* line 1060, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_full .text_large, .page-container .left-column .section .entry_half .text_large, .page-container .left-column .gray_section .entry_full .text_large, .page-container .left-column .gray_section .entry_half .text_large {
+    width: 80%;
+  }
+  /* line 1062, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_full .unit_large, .page-container .left-column .section .entry_half .unit_large, .page-container .left-column .gray_section .entry_full .unit_large, .page-container .left-column .gray_section .entry_half .unit_large {
+    width: 20%;
+    min-width: 103px;
+  }
+  /* line 1065, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_full .text_large_error, .page-container .left-column .section .entry_half .text_large_error, .page-container .left-column .gray_section .entry_full .text_large_error, .page-container .left-column .gray_section .entry_half .text_large_error {
+    width: 73%;
+  }
+  /* line 1067, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_full .unit_large_error, .page-container .left-column .section .entry_half .unit_large_error, .page-container .left-column .gray_section .entry_full .unit_large_error, .page-container .left-column .gray_section .entry_half .unit_large_error {
+    width: 27%;
+    min-width: 97px;
+  }
+  /* line 1070, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_full .text_extra_large, .page-container .left-column .section .entry_half .text_extra_large, .page-container .left-column .gray_section .entry_full .text_extra_large, .page-container .left-column .gray_section .entry_half .text_extra_large {
+    width: 86%;
+  }
+  /* line 1072, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_full .unit_extra_large, .page-container .left-column .section .entry_half .unit_extra_large, .page-container .left-column .gray_section .entry_full .unit_extra_large, .page-container .left-column .gray_section .entry_half .unit_extra_large {
+    width: 14%;
+    min-width: 76px;
+  }
+  /* line 1075, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_full .text_huge, .page-container .left-column .section .entry_half .text_huge, .page-container .left-column .gray_section .entry_full .text_huge, .page-container .left-column .gray_section .entry_half .text_huge {
+    width: 80%;
+  }
+  /* line 1077, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_full .unit_huge, .page-container .left-column .section .entry_half .unit_huge, .page-container .left-column .gray_section .entry_full .unit_huge, .page-container .left-column .gray_section .entry_half .unit_huge {
+    width: 20%;
+    min-width: 103px;
+  }
+}
+
+@media (max-width: 548px) {
+  /* line 1084, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .sample_request {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  /* line 1087, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  /* line 1091, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_confirmation .attribute_row {
+    flex-direction: column;
+  }
+  /* line 1093, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_confirmation .attribute_row .attribute_label {
+    width: 100%;
+    padding-bottom: 4px;
+    padding-right: 0px;
+  }
+  /* line 1097, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_confirmation .attribute_row .attribute_label_tests {
+    padding-top: 0px;
+  }
+  /* line 1099, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_confirmation .attribute_row .attribute_padding {
+    padding-top: 0px;
+  }
+  /* line 1101, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_confirmation .attribute_row .label_second {
+    padding-bottom: 0px;
+  }
+  /* line 1103, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_confirmation .attribute_row_reduced {
+    padding-bottom: 0px;
+  }
+  /* line 1105, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_confirmation .attribute_row_tests {
+    padding-top: 8px;
+  }
+  /* line 1109, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .footer_confirm_container .section .buttons {
+    flex-direction: column;
+  }
+  /* line 1111, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .footer_confirm_container .section .buttons .button_left {
+    width: 100%;
+    padding: 0px 8px 16px 8px;
+  }
+  /* line 1114, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .footer_confirm_container .section .buttons .button_right {
+    width: 100%;
+    padding: 0px 8px 0px 8px;
+  }
+  /* line 1117, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .footer_confirm_container .submit_padding {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 497px) {
+  /* line 1125, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .error_section .icon_section {
+    padding-top: 8px;
+  }
+}
+
+@media (min-width: 389px) and (max-width: 767px) {
+  /* line 1136, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_half_container .half_entry_left .label_half_container .text_long_error .error_long_extended, .page-container .left-column .section .entry_half_container .half_entry_right .label_half_container .text_long_error .error_long_extended, .page-container .left-column .gray_section .entry_half_container .half_entry_left .label_half_container .text_long_error .error_long_extended, .page-container .left-column .gray_section .entry_half_container .half_entry_right .label_half_container .text_long_error .error_long_extended {
+    height: 44px;
+  }
+}
+
+@media (max-width: 338px) {
+  /* line 1145, app/assets/stylesheets/sample_request.sass */
+  .page-container .left-column .section .entry_full .text_long_error .error_long, .page-container .left-column .gray_section .entry_full .text_long_error .error_long {
+    height: 64px;
+    padding: 14px 12px 14px 12px;
+  }
+}

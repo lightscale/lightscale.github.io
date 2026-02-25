@@ -1,0 +1,1150 @@
+$lightscale_dark_blue: #021E5C
+$lightscale_red: #FF5253
+$lightscale_yellow: #FDCC1C
+$lightscale_green: #1DC77D
+$lightscale_cyan: #6BD5C8
+$lightscale_true_blue: #1E4AFF
+$lightscale_violet: #4204BE
+
+// global
+
+html, body, button, input, select, textarea
+  font-family: "Graphik Web", sans-serif
+  font-size: 14px
+
+body
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  -webkit-text-size-adjust: none
+  -moz-text-size-adjust: none
+  -ms-text-size-adjust: none
+  background-color: #AF2796
+  color: #001032
+div, input, textarea
+  line-height: 20px
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  outline: none
+select:focus
+  -webkit-appearance: none
+  -moz-appearance: none
+  outline: none
+label
+  display: block
+  color: #001032
+  font-size: 14px
+  font-weight: 500
+  margin: 0px 0px 7px 0px
+span
+  display: inline
+  color: #667084
+  font-size: 14px
+  font-weight: 500
+a
+  text-decoration: none
+p
+  display: inline
+strong
+  font-weight: bold
+em
+  font-style: italic
+
+.flex_row
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+.flex_col
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  flex-direction: column
+  flex-wrap: nowrap
+
+// sample request
+
+.page-container
+  position: static
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  .left-column
+    width: 50%
+    height: auto
+    min-height: 100vh
+    min-width: 700px
+    padding: 32px 0px 4px
+    -webkit-box-flex: 0
+    -webkit-flex: 0 0 auto
+    -ms-flex: 0 0 auto
+    flex: 0 0 auto
+    background-color: #FFFFFF
+    color: #000
+    .sample_request
+      max-width: 500px
+      margin-right: 100px
+      margin-bottom: 20px
+      margin-left: auto
+      background-color: #FFFFFF
+      label
+        display: inline-block
+        color: #001032
+        font-size: 14px
+        font-weight: 500
+        min-width: 100px
+        margin: 0px 0px 7px 0px
+      input
+        display: inline
+      li
+        margin: 0px 0px 7px 0px
+      .form_header
+        max-width: 500px
+        margin-bottom: 30px
+        h1
+          color: #AF2796
+          font-size: 56px
+          font-weight: 700
+          line-height: 56px
+          letter-spacing: -2.7px
+          margin: 30px 0px 0px 0px
+        .navigation
+          @extend .flex_row
+          margin: 45px 0px 0px 0px
+          h3
+            font-size: 14px
+            color: #AF2796
+            font-weight: 500
+          h4
+            color: #667084
+            font-weight: 500
+          .step_chevron
+            padding: 0px 8px 0px 8px
+    .section
+      @extend .flex_col
+      max-width: 500px
+      margin-right: 100px
+      margin-bottom: 40px
+      margin-left: auto
+      input
+        display: inline
+      li
+        margin: 0px 0px 7px 0px
+      h1
+        color: #001032
+        font-size: 22px
+        font-weight: 500
+        margin: 20px 0px 24px 12px
+      h2
+        color: #001032
+        font-size: 14px
+        line-height: 16px
+        font-weight: 500
+        margin: 0px 0px 6px 0px
+      a
+        color: #1C6BFF
+        text-decoration: none
+      h3
+        color: #001032
+        font-size: 14px
+        font-weight: 600
+        margin: 0px 0px 5px 0px
+      h4
+        color: #667084
+        font-size: 14px
+        font-weight: 400
+      .request_message
+        @extend .flex_col
+        padding: 0px 0px 40px 0px
+        p
+          color: #001032
+          font-size: 22px
+          font-weight: 400
+          line-height: 27px
+        .request_sent
+          @extend .flex_row
+          padding: 0px 0px 25px 0px
+          h6
+            color: #00B667
+            font-size: 22px
+            font-weight: 500
+          .icon
+            padding: 0px 10px 0px 0px
+          .header
+            padding: 2px 0px 0px 0px
+      .marginless
+        margin: 0px 0px 0px 0px
+      .add_batch
+        @extend .flex_row
+        height: 65px
+        padding: 0px 0px 0px 0px
+        cursor: pointer
+        .icon_section
+          min-width: 32px
+          padding: 22px 0px 11px 0px
+        .name_section
+          width: 452px
+          height: 29px
+          padding: 23px 0px 11px 0px
+          h1
+            text-decoration: none
+            color: #1C6BFF
+            font-size: 22px
+            font-weight: 500
+            margin: 0px
+      .half_top
+        input
+          -webkit-appearance: none
+        .submit_button
+          display: block
+          width: 100%
+          height: 45px
+          color: #FFFFFF
+          background-color: #1C6BFF
+          text-decoration: none
+          line-height: 37px
+          font-size: 14px
+          font-weight: 600
+          cursor: pointer
+          border: 1px solid #1C6BFF
+          border-radius: 4px
+          text-align: center
+        .submit_button:hover
+          background-color: #3D81FF
+          border: 1px solid #3D81FF
+          color: #FFFFFF
+        .submit_button:active
+          background-color: #175DE0
+          border: 1px solid #175DE0
+          color: #D0DEF8
+      .half_bottom
+        text-align: center
+        padding-top: 32px
+        line-height: 20px
+        .link
+          color: #1066FF
+        .link:hover
+          color: #3D81FF
+      .error_section
+        @extend .flex_row
+        width: 100%
+        background-color: #FFFFFF
+        padding: 0px 0px 0px 0px
+        margin: 15px 0px 0px 0px
+        .icon_section
+          min-width: 32px
+          padding: 0px 0px 11px 3px
+        .header_section
+          padding: 3px 0px 3px 0px
+          h1
+            font-size: 15px
+            line-height: 17px
+            color: #FF3A4F
+            margin: 0px
+      .footer
+        width: 100%
+        text-align: center
+        padding: 32px 0px 0px 0px
+        h1
+          font-family: 'Roboto Mono', monospace
+          color: #667084
+          font-size: 10px
+          margin: 0px
+    .footer_confirm_container, .notes_confirm_container
+      border-top: solid 1px #E0E2E6
+    .footer_confirm_container
+      .section
+        .buttons
+          @extend .flex_row
+          .button_left
+            padding-right: 6px
+            width: 250px
+          .button_right
+            padding-left: 6px
+            width: 250px
+          .submit_button_half
+            display: block
+            height: 45px
+            width: 100%
+            color: #FFFFFF
+            background-color: #1C6BFF
+            text-decoration: none
+            line-height: 37px
+            font-size: 14px
+            font-weight: 600
+            cursor: pointer
+            border: 1px solid #1C6BFF
+            border-radius: 4px
+            text-align: center
+            -webkit-appearance: none
+            -moz-appearance: none
+          .submit_button_half:hover
+            background-color: #3D81FF
+            border: 1px solid #3D81FF
+            color: #FFFFFF
+          .submit_button_half:active
+            background-color: #175DE0
+            border: 1px solid #175DE0
+            color: #D0DEF8
+          .edit_button_half
+            display: block
+            height: 45px
+            width: 100%
+            color: #667084
+            background-color: #FFF
+            text-decoration: none
+            line-height: 37px
+            font-size: 14px
+            font-weight: 600
+            cursor: pointer
+            border: 2px solid #667084
+            border-radius: 4px
+            text-align: center
+          .edit_button_half:hover
+            background-color: #F7F8F9
+            border: 1px solid #667084
+            color: #667084
+          .edit_button_half:active
+            background-color: #E8EAED
+            border: 1px solid #667084
+            color: #667084
+      .submit_padding
+        padding-top: 60px
+    .gray_section
+      padding-top: 30px
+      padding-bottom: 0px
+      border-color: #E0E2E6
+      border-top-style: solid
+      border-top-width: 1px
+      border-bottom-style: solid
+      border-bottom-width: 1px
+      background-color: #FAFAFB
+      .add_batch_section
+        border-top: none
+        padding-top: 0px
+    .add_batch_gray_section:hover
+      background-color: #F5F5F7
+    .notes_section
+      padding-top: 40px
+    .padless_top
+      padding-top: 0px
+    .topless
+      border-top: 0px
+    .bottomless_border
+      border-bottom: 0px
+    .section, .gray_section, .notes_section
+      .entry_full
+        width: 100%
+        min-height: 69px
+        padding: 0px 0px 20px 0px
+        h1
+          color: #001032
+          font-size: 14px
+          font-weight: 500
+          margin: 0px 0px 12px 0px
+        textarea
+          -webkit-appearance: none
+        .radio_container
+          @extend .flex_col
+          margin: 0px 0px 0px 0px
+          p
+            font-weight: 500
+          label, input
+            cursor: pointer
+          input
+            width: 13px
+            height: 13px
+          .radio_question
+            @extend .flex_row
+            width: 100%
+            margin: 0px 0px 10px 0px
+            .help
+              padding: 2px 0px 0px 20px
+          .radio_answers
+            @extend .flex_row
+            width: 100%
+            min-width: 250px
+            margin: 0px 0px 0px 0px
+            p
+              margin: 0px 20px 0px 0px
+          .radio_error
+            p
+              color: #FF3A4F
+              font-size: 14px
+              font-weight: 500
+              margin: 0px 0px 0px 10px
+          .radio_label, .radio_button
+            margin: 0px 5px 0px 0px
+        .radio_container_last
+          margin: 10px 0px 0px 0px
+        .text_notes
+          border: solid 1px #BFC3CB
+          border-radius: 4px
+          width: 100%
+          min-height: 120px
+          resize: vertical
+          padding: 9px 9px 9px 9px
+        .text_notes:focus
+          border: solid 2px #677082
+          padding: 8px 8px 8px 8px
+        .tests
+          @extend .flex_col
+          width: 100%
+          max-width: 500px
+          border: solid 1px #BFC3CB
+          border-radius: 4px
+          label
+            color: #001032
+            font-size: 14px
+            font-weight: 500
+            margin: 0px 0px 0px 0px
+          .test
+            @extend .flex_row
+            width: 100%
+            height: 44px
+            background-color: #FFFFFF
+            border: solid 1px #BFC3CB
+            border-radius: 1px
+            border-left: none
+            border-right: none
+            border-top: none
+            cursor: pointer
+            .check_section
+              -webkit-box-sizing: content-box
+              -moz-box-sizing: content-box
+              box-sizing: content-box
+              width: 12px
+              padding: 15px 16px 17px 12px
+              input
+                width: 13px
+                height: 13px
+              .check
+                cursor: pointer
+            .check_section:checked
+              background-color: blue
+            .name_section
+              width: 460px
+              padding: 15px 0px 14px 0px
+          .test:hover
+            background-color: #FAFAFB
+          .first
+            border-radius: 4px 4px 1px 1px
+          .last
+            border: hidden 1px
+            border-radius: 1px 1px 4px 4px
+        .section_header_text
+          padding: 0px 0px 3px 0px
+      .unit_size_entry
+      .unit_quantity_entry
+      .entry_check
+        @extend .flex_row
+        width: 100%
+        // height: 33px
+        padding: 0px 0px 20px 0px
+        label
+          margin: 0px 0px 0px 0px
+        .label_container
+          width: 100%
+          justify-content: space-between
+          margin: 7px 0px 0px 0px
+          .label_name
+            max-height: 30px
+            padding: 0px 0px 0px 0px
+          .label_help
+        .check_section
+          -webkit-box-sizing: content-box
+          -moz-box-sizing: content-box
+          box-sizing: content-box
+          width: 12px
+          padding: 5px 19px 5px 0px
+          input
+            -webkit-appearance: checkbox
+            -moz-appearance: checkbox
+            appearance: checkbox
+            width: 20px
+            height: 20px
+          .check
+            cursor: pointer
+        .check_section:checked
+          background-color: blue
+        .name_section
+          width: 460px
+          padding: 15px 0px 14px 0px
+      .entry_check_appended
+        @extend .flex_row
+        width: 100%
+        // height: 33px
+        padding: 0px 0px 20px 0px
+        label
+          font-size: 12px
+          color: #667084
+          margin: 3px 0px 0px 0px
+        .label_container
+          width: 100%
+          justify-content: space-between
+          margin: 7px 0px 0px 0px
+          .label_name
+            max-height: 30px
+            padding: 0px 0px 0px 0px
+          .label_help
+        .check_section
+          -webkit-box-sizing: content-box
+          -moz-box-sizing: content-box
+          box-sizing: content-box
+          width: 12px
+          padding: 10px 10px 0px 0px
+          input
+            -webkit-appearance: checkbox
+            -moz-appearance: checkbox
+            appearance: checkbox
+            width: 13px
+            height: 13px
+          .check
+            cursor: pointer
+        .check_section:checked
+          background-color: blue
+        .name_section
+          width: 460px
+          padding: 15px 0px 14px 0px
+      .hidden
+        display: none
+      .bottomless_padding
+        padding-bottom: 0px
+      .entry_half_container
+        @extend .flex_col
+        min-height: 69px
+        width: 100%
+        padding: 0px
+      .entry_half
+        @extend .flex_row
+        min-height: 69px
+        width: 100%
+        padding: 0px 0px 20px 0px
+        .half_entry_left
+          width: 50%
+          padding: 0px 8px 0px 0px
+        .half_entry_right
+          width: 50%
+          padding: 0px 0px 0px 8px
+        .half_entry_left_labeled
+          width: 50%
+          padding: 0px 2px 0px 0px
+        .half_entry_right_labeled
+          width: 50%
+          padding: 0px 0px 0px 2px
+      .entry_full, .entry_half, .entry_half_container, .entry_check
+        .label_container
+          @extend .flex_row
+          justify-content: space-between
+          .label_name
+            .field_with_errors
+              display: inline
+              width: 100%
+              input
+                width: 100%
+          .label_help
+            padding: 3px 0px 0px 0px
+        .label_half_container
+          @extend .flex_col
+          .label_half_name
+            display: flex
+            align-items: center
+            justify-content: flex-start
+            padding: 0px 6px 0px 0px
+        .help_icon
+          float: right
+          width: 14px
+          height: 14px
+        .helper
+          width: 20px
+          height: 20px
+          position: relative
+          cursor: help
+        .helper_content
+          @extend .flex_col
+          position: absolute
+          top: -10px
+          right: 9999px
+          width: 250px
+          height: 250px
+          margin: 0px -220px 0px 0px
+          border-radius: 5px
+          opacity: 0
+          z-index: 1000
+          -webkit-transition: opacity 250ms ease-out
+             -moz-transition: opacity 250ms ease-out
+              -ms-transition: opacity 250ms ease-out
+               -o-transition: opacity 250ms ease-out
+                  transition: opacity 250ms ease-out
+          .helper_content_top
+            background: #667083
+            padding: 10px 10px 0px 10px
+            border-radius: 5px 5px 0px 0px
+            .help_coa
+              width: 100%
+          .helper_content_bottom, .helper_content_mono
+            background: #FFFFFF
+            padding: 20px
+            -webkit-box-shadow: 0px 0px 5px 0px #AAAAAA
+               -moz-box-shadow: 0px 0px 5px 0px #AAAAAA
+                    box-shadow: 9px #AAAAAA
+            a
+              color: #021E5C
+              font-weight: 500
+              text-decoration: underline
+            p
+              color: #001032
+              font-weight: 400
+          .helper_content_bottom
+            border-radius: 0px 0px 5px 5px
+          .helper_content_mono
+            border-radius: 5px
+        // .helper:hover .helper_content
+        //   right: -5px
+        //   opacity: 1
+        .helper_content_open
+          right: -5px
+          opacity: 1
+        .helper_content_closed
+          opacity: 0
+        // .helper .helper_content:before
+        //   content: ' '
+        //   position: absolute
+        //   top: 50%
+        //   left: -16px
+        //   width: 0
+        //   height: 0
+        //   margin-top: -8px
+        //   border: 8px solid transparent
+        //   border-right-color: #333333
+        .text_long_error
+          @extend .flex_col
+          width: 100%
+          border: solid 2px #FF3A4F
+          border-radius: 4px
+          .row
+            @extend .flex_row
+          .text_long
+            width: 100%
+            height: 38px
+            padding: 0px 0px 0px 12px
+            border-left: none
+            border-right: none
+            border-top: none
+            border-bottom: solid 2px #FF3A4F
+            border-radius: 4px 4px 0px 0px
+          .text_long:focus
+            border-left: none
+            border-right: none
+            border-top: none
+            border-bottom: solid 2px #FF3A4F
+            border-radius: 4px 4px 0px 0px
+          .expanded
+            height: 44px
+          .error_long
+            height: 44px
+            background-color: #FFF5F6
+            padding: 14px 0px 0px 12px
+            border-radius: 0px 0px 4px 4px
+            h1
+              font-size: 13px
+              font-weight: 500
+              line-height: 17px
+              margin: 0px
+          .error_long_extended
+            height: 58px
+            padding: 14px 12px 14px 12px
+          .error_border_right
+            border: solid 1px #FF3A4F
+            border-top: none
+            border-left: none
+            border-right: solid 1px #FF3A4F
+            border-bottom: solid 2px #FF3A4F
+          .error_border_left
+            border: solid 1px #FF3A4F
+            border-top: none
+            border-right: none
+            border-bottom: solid 2px #FF3A4F
+            border-radius: 0px 4px 0px 0px
+          .error_tests
+            border-top: none
+            border-left: none
+            border-right: none
+            border-bottom: solid 2px #FF3A4F
+            border-radius: 4px 4px 0px 0px
+        .harvest_process_date
+          cursor: pointer
+        .text_long
+          -webkit-appearance: none
+          -moz-appearance: none
+          border: solid 1px #BFC3CB
+          border-radius: 4px
+          width: 100%
+          height: 44px
+          padding: 0px 0px 0px 12px
+        .text_long:focus
+          border: solid 2px #677082
+          padding: 0px 0px 0px 11px
+        .text_short_unit
+          border: solid 1px #BFC3CB
+          border-radius: 4px 0px 0px 4px
+          width: 70%
+          height: 44px
+          padding: 0px 0px 0px 12px
+          -webkit-appearance: none
+          -moz-appearance: none
+        .text_short_unit:focus
+          border: solid 2px #677082
+          border-radius: 4px 0px 1px 4px
+          padding: 0px 0px 0px 11px
+        .select_unit_attached
+          -webkit-appearance: none
+          -moz-appearance: none
+          background-color: #FFFFFF
+          border: solid 1px #BFC3CB
+          border-radius: 0px 4px 4px 0px
+          border-left: none
+          width: 30%
+          height: 44px
+          padding: 0px 0px 0px 12px
+          background-image: asset-url("chevron_d.svg")
+          background-position: calc(100% - 15px) calc(1em + 4px), calc(100% - 10px) calc(1em + 2px), calc(100% - .5em) .5em
+          background-repeat: no-repeat
+        .select_unit_attached:focus
+          -webkit-appearance: none
+          -moz-appearance: none
+          border: solid 2px #677082
+          border-left: solid 1px #858C9C
+          padding: 0px 0px 0px 12px
+        .unit_attached
+          -webkit-appearance: none
+          -moz-appearance: none
+          background-color: #FFFFFF
+          border: solid 1px #BFC3CB
+          border-radius: 0px 4px 4px 0px
+          border-left: none
+          width: 30%
+          height: 44px
+          padding: 12px 0px 0px 0px
+          text-align: center
+        .text_short_unit_error
+          height: 38px
+          border-top: none
+          border-left: none
+          border-right: solid 1px #FF3A4F
+          border-bottom: solid 2px #FF3A4F
+          border-radius: 4px 0px 0px 0px
+        .text_short_unit_error:focus
+          border-top: none
+          border-left: none
+          border-right: solid 1px #FF3A4F
+          border-bottom: solid 2px #FF3A4F
+          border-radius: 4px 0px 0px 0px
+          padding: 0px 0px 0px 12px
+        .select_unit_attached_error
+          height: 38px
+        .select_unit_attached_error:focus
+          border: solid 1px #FF3A4F
+          border-top: none
+          border-right: none
+          border-bottom: solid 2px #FF3A4F
+          border-radius: 0px 5px 0px 0px
+          padding: 0px 0px 0px 12px
+        .text_small
+          width: 83%
+        .unit_small
+          width: 17%
+        .text_medium
+          width: 75%
+        .unit_medium
+          width: 25%
+        .text_large
+          width: 58%
+        .unit_large
+          width: 42%
+        .text_extra_large
+          width: 68%
+        .unit_extra_large
+          width: 32%
+        .text_huge
+          width: 47%
+        .unit_huge
+          width: 53%
+        .text_small_error
+          width: 82%
+        .unit_small_error
+          width: 18%
+          min-width: 75px
+        .text_large_error
+          width: 60%
+        .unit_large_error
+          width: 40%
+          min-width: 108px
+        .text_extra_large_error
+          width: 68%
+        .unit_extra_large_error
+          width: 32%
+          min-width: 108px
+        .text_full
+          width: 100%
+        .select_long
+          -webkit-appearance: none
+          -moz-appearance: none
+          background-color: #FFFFFF
+          border: solid 1px #BFC3CB
+          border-radius: 4px
+          width: 100%
+          height: 44px
+          padding: 0px 0px 0px 12px
+          background-image: asset-url("chevron_d.svg")
+          background-position: calc(100% - 15px) calc(1em + 4px), calc(100% - 10px) calc(1em + 2px), calc(100% - .5em) .5em
+          background-repeat: no-repeat
+        .select_long:focus
+          border: solid 2px #677082
+        .select_error:focus
+          border-top: none
+          border-right: none
+          border-left: none
+          border-bottom: solid 2px #FF3A4F
+          border-radius: 4px 4px 0px 0px
+          padding: 0px 0px 0px 11px
+        .select_short
+          -webkit-appearance: none
+          -moz-appearance: none
+          background-color: #FFFFFF
+          border: solid 1px #BFC3CB
+          border-radius: 4px
+          width: 100%
+          max-width: 226px
+          height: 44px
+          padding: 0px 0px 0px 12px
+          background-image: asset-url("chevron_d.svg")
+          background-position: calc(100% - 15px) calc(1em + 4px), calc(100% - 10px) calc(1em + 2px), calc(100% - .5em) .5em
+          background-repeat: no-repeat
+        .select_short:focus
+          border: solid 2px #677082
+          padding: 0px 0px 0px 11px
+        .select_error
+          height: 38px
+          border: solid 1px #FF3A4F
+          border-top: none
+          border-right: none
+          border-left: none
+          border-bottom: solid 2px #FF3A4F
+          border-radius: 4px 4px 0px 0px
+        .select_error:focus
+          height: 38px
+          border: solid 1px #FF3A4F
+          border-top: none
+          border-right: none
+          border-left: solid 1px #FF3A4F
+          border-bottom: solid 2px #FF3A4F
+          border-radius: 4px 4px 0px 0px
+          padding: 0px 0px 0px 11px
+        .row
+          .field_with_errors
+            display: inline
+            width: 100%
+            input
+              width: 100%
+      .entry_confirmation
+        @extend .flex_col
+        width: 100%
+        padding: 0px 0px 40px 0px
+        .attribute_row
+          @extend .flex_row
+          min-height: 28px
+          width: 100%
+          background-color: transparent
+          border: solid 1px #E0E2E6
+          border-radius: 1px
+          border-left: none
+          border-right: none
+          border-bottom: none
+          padding: 10px 0px 8px 8px
+          .attribute_label
+            width: 207px
+            padding: 0px 13px 0px 0px
+            h5
+              font-weight: 500
+          .attribute_label_tests
+            padding-top: 2px
+          .attribute
+            max-width: 278px
+            overflow-wrap: break-word
+          .attribute_padding
+            padding-top: 10px
+          .attribute_tests
+            @extend .flex_col
+            .attribute_test
+              padding-top: 2px
+        .attribute_row_tests
+          padding-top: 8px
+        .attribute_row_reduced
+          padding-bottom: 0px
+        .second_row
+          border-top: none
+          padding-top: 0px
+      .batch_header
+        @extend .flex_row
+        justify-content: space-between
+        max-width: 500px
+        height: 108px
+        a
+          text-decoration: none
+          color: #FF3A4F
+          font-size: 12px
+          font-weight: 500
+      .batch_header_adjusted
+        height: 83px
+      .section_header_icon
+        @extend .flex_row
+        padding-bottom: 20px
+        .icon
+          padding: 20px 0px 0px 0px
+        .remove_icon
+          padding: 25px 4px 0px 0px
+        .header_button_text
+          padding: 23px 0px 0px 0px
+      .section_header_top
+        height: 53px
+        padding: 0px 0px 0px 0px
+      .section_header_reduced
+        height: 95px
+        padding: 40px 0px 0px 0px
+      .padless
+        padding: 0px 0px 0px 0px
+      .padless_bottom
+        padding-bottom: 0px
+      .minimal_height
+        min-height: 44px
+      .unbound
+        padding: 0px 0px 25px 0px
+    .nl
+      display: inline
+    .nlb
+      display: inline-block
+    .post_field_text
+      margin-top: 10px
+    .example_text
+      font-size: 12px
+      margin-top: 5px
+      color: #667084
+    .error_text
+      margin-top: 10px
+      color: #FF3A4F
+    .nested-fields
+      padding-top: 40px
+      border-color: #E0E2E6
+      border-top-style: solid
+      border-top-width: 1px
+    .field_container
+      @extend .flex_row
+      width: 100%
+    .field_container_error
+      @extend .flex_row
+      width: 100%
+      .field_with_errors
+        display: inline
+        width: 80%
+        input
+          width: 100%
+    .bottomless
+      margin-bottom: 0px
+    .reduced_bottom
+      margin-bottom: 20px
+    .marginless
+      margin: 0px 0px 0px 0px
+    .lh20
+      line-height: 20px
+    .padless_bottom
+      padding-bottom: 0px
+    .forty_padding_top
+      padding-top: 40px
+  .right-illustration-column
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    justify-content: center
+    overflow: visible
+    width: 100%
+    min-height: 100vh
+    background-color: $lightscale_dark_blue
+    .beakers
+      display: block
+      margin: 0 auto
+      position: fixed
+      width: 18%
+      top: 30%
+
+// @media (max-width: 500px)
+//   .page-container
+//     .left-column
+//       .section
+//         .entry_full, .entry_half
+//           .label_container
+//             .helper_content
+//               display: none
+//             .helper_content_open
+//               display: block
+//               right: -5px
+//               opacity: 1
+
+@media (max-width: 1130px)
+  .page-container
+    .right-illustration-column
+      .beakers
+        display: none
+
+@media (max-width: 991px)
+  .page-container
+    .left-column
+      width: 100%
+      min-width: 50px
+      .section
+        margin-right: auto
+      .sample_request
+        margin-right: auto
+      .section, .gray_section, .notes_section
+        .entry_full, .entry_half
+          .helper
+            .helper_content
+              margin: 0px 30px 0px 0px
+            .inverse
+              margin: -170px -240px 0px 0px
+            .control_study
+              margin: 40px -125px 0px 0px
+    .right-illustration-column
+      visibility: hidden
+
+@media (max-width: 767px)
+  .page-container
+    .left-column
+      padding-top: 24px
+      padding-bottom: 24px
+      .sample_request
+        .form_header
+          h1
+            font-size: 48px
+            line-height: 48px
+      .section
+        .entry_half
+          flex-direction: column
+          min-height: 69px
+          width: 100%
+          padding: 0px 0px 0px 0px
+          .half_entry_left, .half_entry_left_labeled
+            width: 100%
+            padding: 0px 0px 25px 0px
+          .half_entry_right, .half_entry_right_labeled
+            width: 100%
+            padding: 0px 0px 25px 0px
+
+@media (min-width: 320px) and (max-width: 767px)
+  .page-container
+    .left-column
+      .section, .gray_section
+        .entry_full, .entry_half
+          .text_small
+            width: 85%
+          .unit_small
+            width: 15%
+            min-width: 82px
+          .text_large
+            width: 80%
+          .unit_large
+            width: 20%
+            min-width: 103px
+          .text_large_error
+            width: 73%
+          .unit_large_error
+            width: 27%
+            min-width: 97px
+          .text_extra_large
+            width: 86%
+          .unit_extra_large
+            width: 14%
+            min-width: 76px
+          .text_huge
+            width: 80%
+          .unit_huge
+            width: 20%
+            min-width: 103px
+
+@media (max-width: 548px)
+  .page-container
+    .left-column
+      .sample_request
+        padding-left: 24px
+        padding-right: 24px
+      .section
+        padding-left: 24px
+        padding-right: 24px
+        .entry_confirmation
+          .attribute_row
+            flex-direction: column
+            .attribute_label
+              width: 100%
+              padding-bottom: 4px
+              padding-right: 0px
+            .attribute_label_tests
+              padding-top: 0px
+            .attribute_padding
+              padding-top: 0px
+            .label_second
+              padding-bottom: 0px
+          .attribute_row_reduced
+            padding-bottom: 0px
+          .attribute_row_tests
+            padding-top: 8px
+      .footer_confirm_container
+        .section
+          .buttons
+            flex-direction: column
+            .button_left
+              width: 100%
+              padding: 0px 8px 16px 8px
+            .button_right
+              width: 100%
+              padding: 0px 8px 0px 8px
+        .submit_padding
+          padding-top: 30px
+
+@media (max-width: 497px)
+  .page-container
+    .left-column
+      .section
+        .error_section
+          .icon_section
+            padding-top: 8px
+
+@media (min-width: 389px) and (max-width: 767px)
+  .page-container
+    .left-column
+      .section, .gray_section
+        .entry_half_container
+          .half_entry_left, .half_entry_right
+            .label_half_container
+              .text_long_error
+                .error_long_extended
+                  height: 44px
+
+@media (max-width: 338px)
+  .page-container
+    .left-column
+      .section, .gray_section
+        .entry_full
+          .text_long_error
+            .error_long
+              height: 64px
+              padding: 14px 12px 14px 12px
+
+
+
